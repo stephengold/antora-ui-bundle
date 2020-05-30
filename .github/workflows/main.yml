@@ -52,6 +52,9 @@ jobs:
 #    - name: Audit Depends
 #      run: npm audit
 
+    - name: Gulp Commands
+      run: gulp --tasks-simple
+      
     # Detects any updates to package-lock.json and package.json and commits the
     # files to root.
     # see:
