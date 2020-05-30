@@ -42,15 +42,15 @@ jobs:
 
     # Uncomment when adding or updating dependencies in the package-lock.json
     # and package.json files for ci.
-#    - name: Install Node
-#      run: npm i
+    - name: Install Node
+      run: npm i
 
     # Uncomment after package-lock.json and package.json files are updated.
     - name: Run with CI
       run: npm ci
 
     - name: Audit Depends
-      run: npm audit
+      run: npm audit fix
 
     # Detects any updates to package-lock.json and package.json and commits the
     # files to root.
