@@ -1,0 +1,67 @@
+name: Build Site
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  build:
+
+    #Static version is used to maintain stability
+    runs-on: ubuntu-18.04
+
+    strategy:
+      matrix:
+        #Static version is used to maintain stability
+        node-version: [12.17.0]
+
+    steps:
+    - name: Clone the repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+
+    - name: Cache node modules
+      uses: actions/cache@v2
+      env:
+        cache-name: cache-node-modules
+      with:
+        # npm cache files are stored in `~/.npm` on Linux/macOS
+        path: ~/.npm
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    # Uncomment when adding or updating dependencies in the package-lock.json
+    # and package.json files for ci.
+#    - name: Install Node
+#      run: npm i
+
+    # Uncomment after package-lock.json and package.json files are updated.
+    - name: Run with CI
+      run: npm ci
+
+    - name: Audit Depends
+      run: npm audit
+
+    # Detects any updates to package-lock.json and package.json and commits the
+    # files to root.
+    # see:
+    # https://github.com/marketplace/actions/add-commit?version=v4.1.0
+    # for use options.
+    - name: Commit Packages
+      uses: EndBug/add-and-commit@v4
+      with:
+        message: "Commit files for CI workflow"
+        # Commits these files to root if and only if there are changes.
+        add: "package-lock.json package.json"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
