@@ -46,8 +46,8 @@ jobs:
       run: npm i
 
     # Uncomment after package-lock.json and package.json files are updated.
-    - name: Run with CI
-      run: npm ci
+#    - name: Run with CI
+#      run: npm ci
 
     - name: Audit Depends
       run: npm audit fix
