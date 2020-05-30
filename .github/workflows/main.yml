@@ -53,7 +53,9 @@ jobs:
 #      run: npm audit
 
     - name: Gulp Commands
-      run: gulp --tasks-simple
+      run: |
+        gulp bundle
+        ls -al build
       
     # Detects any updates to package-lock.json and package.json and commits the
     # files to root.
