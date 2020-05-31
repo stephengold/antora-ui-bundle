@@ -52,7 +52,7 @@ jobs:
 #    - name: Audit Depends
 #      run: npm audit
 
-    - name: Build Preview
+    - name: Build Bundle
       run: gulp bundle
         
       
