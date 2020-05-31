@@ -11,10 +11,10 @@ jobs:
     #Static version is used to maintain stability
     runs-on: ubuntu-18.04
 
-    strategy:
-      matrix:
-        #Static version is used to maintain stability
-        node-version: [12.17.0]
+#    strategy:
+#      matrix:
+#        #Static version is used to maintain stability
+#        node-version: [12.17.0]
 
     steps:
     - name: Clone the repo
@@ -35,10 +35,10 @@ jobs:
           ${{ runner.os }}-build-
           ${{ runner.os }}-
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+#    - name: Use Node.js ${{ matrix.node-version }}
+#      uses: actions/setup-node@v1
+#      with:
+#        node-version: ${{ matrix.node-version }}
 
     # Uncomment when adding or updating dependencies in the package-lock.json
     # and package.json files for ci.
