@@ -52,10 +52,9 @@ jobs:
 #    - name: Audit Depends
 #      run: npm audit
 
-    - name: Gulp Commands
-      run: |
-        gulp bundle
-        ls -al build
+    - name: Build Preview
+      run: gulp bundle
+        
       
     # Detects any updates to package-lock.json and package.json and commits the
     # files to root.
@@ -67,6 +66,6 @@ jobs:
       with:
         message: "Commit files for CI workflow"
         # Commits these files to root if and only if there are changes.
-        add: "package-lock.json package.json"
+        add: "package-lock.json package.json build/ui-bundle.zip"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
