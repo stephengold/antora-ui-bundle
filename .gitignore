@@ -1,4 +1,4 @@
-/build/
+/build/*
 !/build/ui-bundle.zip
 /node_modules/
 /public/
