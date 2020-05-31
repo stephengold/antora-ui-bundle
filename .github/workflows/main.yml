@@ -66,6 +66,6 @@ jobs:
       with:
         message: "Commit files for CI workflow"
         # Commits these files to root if and only if there are changes.
-        add: "package-lock.json package.json build/ui-bundle.zip"
+        add: "package-lock.json package.json ./build/ui-bundle.zip"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
