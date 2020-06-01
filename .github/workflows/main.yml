@@ -62,8 +62,8 @@ jobs:
     # Uncomment to write the default package.json file to the repo root.
     # When used in conjunction with the action add-and-commit 'add' command, the
     # file will be written to the repo for editing.
-#    - name: Install default package.json
-#      run: npm init --yes
+    - name: Install default package.json
+      run: npm init --yes
 
     # Uncomment when adding or updating dependencies in the package-lock.json
     # and package.json files for ci.
