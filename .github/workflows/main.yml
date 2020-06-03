@@ -59,5 +59,5 @@ jobs:
 
     - name: Dispatch event
       run: curl -X https://api.github.com/repos/mitm001/docs.jmonkeyengine.org/dispatches \
-       -u ${{ secrets.JME_UI_DISPATCH }} \
+       --user ${{ secrets.JME_UI_DISPATCH }} \
        --data '{"event_type":"ui-build","client_payload":{}}'
