@@ -58,6 +58,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Dispatch event
-      run: curl POST https://api.github.com/repos/mitm001/docs.jmonkeyengine.org/dispatches \
+      run: curl https://api.github.com/repos/mitm001/docs.jmonkeyengine.org/dispatches \
        -u ${{ secrets.JME_UI_DISPATCH }} \
-       --data '{"event_type":"ui-build", "client_payload":{}}'
+       --data '{"event_type":"ui-build","client_payload":{}}'
