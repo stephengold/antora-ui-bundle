@@ -51,7 +51,6 @@ jobs:
       uses: EndBug/add-and-commit@v4
       with:
         message: "Commit files for CI workflow"
-        remove: "./build/ui-bundle.zip"
         # Commits these files to root if and only if there are changes.
         add: "package-lock.json package.json ./build/ui-bundle.zip"
       env:
