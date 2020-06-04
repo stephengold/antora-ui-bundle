@@ -49,7 +49,7 @@ jobs:
       if: contains(github.ref, "ref/head/v*")
       uses: "marvinpinto/action-automatic-releases@latest"
     - name: Set Output
-      id: tag
+      id: vars
       run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
     - name: Check output
       env: 
