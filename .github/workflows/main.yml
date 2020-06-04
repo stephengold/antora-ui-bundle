@@ -40,8 +40,7 @@ jobs:
 #      run: npm audit
 
     - name: Build Bundle
-      run: gulp bundle
-        
+      run: gulp bundle        
       
     # Detects any updates to package-lock.json and package.json and commits the
     # files to root.
