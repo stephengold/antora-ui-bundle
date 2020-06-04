@@ -46,10 +46,11 @@ jobs:
       run: gulp bundle   
    
     - name: Upload Release
+      if: github.ref == 'ref/head/v*'
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-#          automatic_release_tag: "latest"
+          automatic_release_tag: "latest"
           prerelease: false
           title: "jme-ui"
           files: ./build/ui-bundle.zip           
