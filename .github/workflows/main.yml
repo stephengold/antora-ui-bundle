@@ -27,6 +27,35 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+name: Build Site
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  build:
+
+    #Static version is used to maintain stability
+    runs-on: ubuntu-18.04
+
+    strategy:
+      matrix:
+        #Static version is used to maintain stability
+        node-version: [12.17.0]
+
+    steps:
+    - name: Clone the repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
     # Uncomment when adding or updating dependencies in the package-lock.json
     # and package.json files for ci.
 #    - name: Install Node
@@ -43,6 +72,28 @@ jobs:
       id: build_bundle
       run: gulp bundle        
 
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ui-bundle # ${{ github.ref }}
+        release_name: ui-bundle # Release ${{ github.ref }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+        asset_path: ./build/ui-bundle.zip
+        asset_name: ui-bundle.zip
+        asset_content_type: application/zip
+          
     # Detects any updates to package-lock.json and package.json and commits the
     # files to root.
     # see:
