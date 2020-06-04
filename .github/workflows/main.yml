@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ] 
     tags:
-      - "v*"  
+      - 'v*.*.'  
   pull_request:   
 
 jobs:
@@ -48,6 +48,15 @@ jobs:
     - name: Upload Release
       if: contains(github.ref, "ref/head/v*")
       uses: "marvinpinto/action-automatic-releases@latest"
+    - name: Set Output
+      id: tag
+      run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+    - name: Check output
+      env: 
+       RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
+       run: |
+          echo $RELEASE_VERSION
+          echo ${{ steps.vars.outputs.tag }}      
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
