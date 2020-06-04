@@ -40,8 +40,24 @@ jobs:
 #      run: npm audit
 
     - name: Build Bundle
+      id: build_bundle
       run: gulp bundle        
       
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          Changes in this Release
+            - First Change
+            - Second Change
+        draft: false
+        prerelease: false
+
     # Detects any updates to package-lock.json and package.json and commits the
     # files to root.
     # see:
@@ -52,7 +68,7 @@ jobs:
       with:
         message: "Commit files for CI workflow"
         # Commits these files to root if and only if there are changes.
-        add: "package-lock.json package.json ./build/ui-bundle.zip"
+        add: "package-lock.json package.json"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
