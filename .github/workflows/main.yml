@@ -41,7 +41,16 @@ jobs:
 
     - name: Build Bundle
       id: build_bundle
-      run: gulp bundle        
+      run: gulp bundle   
+   
+    - name: Upload Release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "jme-ui"
+          files: ./build/ui-bundle.zip           
           
     # Detects any updates to package-lock.json and package.json and commits the
     # files to root.
