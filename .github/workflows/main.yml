@@ -46,7 +46,7 @@ jobs:
       run: gulp bundle   
    
     - name: Upload Release
-      if: github.ref == 'ref/head/v*'
+      if: contains(github.ref, "ref/head/v*")
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
