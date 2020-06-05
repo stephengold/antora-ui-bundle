@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ] 
     tags:
-      - v*  
+      - v1*  
   pull_request:   
 
 jobs:
@@ -43,27 +43,14 @@ jobs:
 
     - name: Build Bundle
       id: build_bundle
-      run: gulp bundle   
-   
-    - name: Set output
-      id: vars
-      run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
-    - name: Check output
-      env:
-        RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
-      run: |
-          echo $RELEASE_VERSION
-          echo ${{ steps.vars.outputs.tag }}   
-    
-    - name: if test
-      run: echo ${{ github.ref }}
+      run: gulp bundle    
      
     - name: Upload Release  
-      if: contains(github.ref, 'v')
+      if: contains(github.ref, 'v1')
       uses: "marvinpinto/action-automatic-releases@latest"      
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
+          automatic_release_tag: ${{ GITHUB_REF#refs/*/ }}
           prerelease: false
           title: "jme-ui"
           files: ./build/ui-bundle.zip           
