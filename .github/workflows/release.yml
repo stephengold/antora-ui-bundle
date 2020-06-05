@@ -39,11 +39,12 @@ jobs:
       run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
 
     - name: Upload Release
+      if: ( steps.build_bundle.outcome  != 'failure' )
+        &&  ( steps.build_bundle.outcome != 'skipped' )
       id: upload_release
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: ${{ steps.vars.outputs.tag }}
           prerelease: false
           title: "jme-ui"
           files: ./build/ui-bundle.zip
