@@ -7,17 +7,51 @@ on:
 
 jobs:
   tagged-release:
-    name: "Tagged Release"
-    runs-on: "ubuntu-latest"
+
+    #Static version is used to maintain stability
+    runs-on: ubuntu-18.04
+
+    strategy:
+      matrix:
+        #Static version is used to maintain stability
+        node-version: [12.17.0]
 
     steps:
-      # ...
-      - name: "Build & test"
-        run: |
-          echo "done!"
+    - name: Clone the repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
 
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Run with CI
+      run: npm ci
+
+    - name: Build Bundle
+      id: build_bundle
+      run: gulp bundle
+
+    - name: Set output
+      id: vars
+      run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+
+    - name: Upload Release
+      id: upload_release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: ${{ steps.vars.outputs.tag }}
           prerelease: false
+          title: "jme-ui"
           files: ./build/ui-bundle.zip
+
+    - name: Dispatch event
+      if: ( steps.upload_release.outcome  != 'failure' )
+        &&  ( steps.upload_release.outcome != 'skipped' )
+      run: |
+       curl -X POST https://api.github.com/repos/mitm001/docs.jmonkeyengine.org/dispatches \
+       --user ${{ secrets.JME_UI_DISPATCH }} \
+       --data '{"event_type":"ui-build","client_payload":{"sha": "${{ github.sha }}"}}'
