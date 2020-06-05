@@ -27,17 +27,23 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    # Do not use this workflow with the install command. A stable environment is
+    # already expected for releases.
     - name: Run with CI
       run: npm ci
 
+    # Build to ui for release.
     - name: Build Bundle
       id: build_bundle
       run: gulp bundle
 
+    # Strip the refs/heads/ from GITHUB_REF leaving only the tag name.
     - name: Set output
       id: vars
       run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
 
+    # Deploy a new release.
+    # see: https://github.com/marvinpinto/action-automatic-releases
     - name: Upload Release
       if: ( steps.build_bundle.outcome  != 'failure' )
         &&  ( steps.build_bundle.outcome != 'skipped' )
@@ -46,10 +52,11 @@ jobs:
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
-          title: "jme-ui"
+          title: format('jme-ui {0}', ${{ steps.vars.outputs.tag }})
           files: ./build/ui-bundle.zip
 
-    - name: Dispatch event
+    # Notify the docs repo we have a new ui.
+    - name: Docs Dispatch Event
       if: ( steps.upload_release.outcome  != 'failure' )
         &&  ( steps.upload_release.outcome != 'skipped' )
       run: |
