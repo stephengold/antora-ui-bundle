@@ -43,6 +43,9 @@ jobs:
     - name: Run with CI
       run: npm ci
 
+    - name: Run outdated
+      run: npm outdated
+
     - name: Audit Depends
       run: npm audit
 
