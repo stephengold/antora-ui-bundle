@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ] 
     tags:
-      - v1*  
+      - v*  
   pull_request:   
 
 jobs:
@@ -50,7 +50,7 @@ jobs:
       run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
 
     - name: Upload Release  
-      if: contains(github.ref, 'v1')
+      if: contains(github.ref, 'v')
       id: upload_release
       uses: "marvinpinto/action-automatic-releases@latest"      
       with:
