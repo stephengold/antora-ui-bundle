@@ -1,0 +1,210 @@
+= Ui Setup
+:author: mitm
+:revnumber: 1.0
+:revdate: 5/30/2020
+:experimental:
+
+Install is based off the link:https://help.github.com/en/actions/language-and-framework-guides/using-nodejs-with-github-actions[Using Node.js with GitHub Actions] guide using the cloned repository link:https://gitlab.com/antora/antora-ui-default.git[https://gitlab.com/antora/antora-ui-default.git].
+
+. Definitions:
+.. Github Web Interface (GWI)
+.. Git Command Line Interface (CLI)
+.. Continuous Integration (CI)
+
+== Clone Repository
+
+. From a GitHub account repository tab, select the btn:[New] button.
+. On the "`Create a new repository`" page, select the 'Import a repository' link.
+. Enter the repository link `+++https://gitlab.com/antora/antora-ui-default.git+++`.
+. Enter a name of `jme-ui`.
+. From the Atom Editor, clone the new repository.
+.. Select `menu:File[New Window]`.
+.. In the new window, select `menu:Packages[Command Palette>Toggle]` or use the keyboard shortcut kbd:[Ctl+Shift+P].
+.. Enter `GitHub Clone` into the search box and then select the btn:[GitHub Clone] button.
+.. Enter the repository `.git` url into the `Clone from` text box. The `To directory` textbox will auto fill.
+.. Click the btn:[Clone] button.
+
+== Setup of Node.js
+
+GitHub Actions requires a workflow file located in a `.github/workflows` folder. Ours is named main.yml. In order to use (CI), there must be a `package.json` and `package-lock.json` file located in the root folder of the repository. Node.js will build and update these files automatically for us. We will use an action named "`add-and-commit`" to commit the files to the root folder. These steps are all built into the workflow file shown below.
+
+[NOTE]
+====
+You can edit/add the main.yml from a git (CLI) or the (GWI) only.
+
+This tutorial uses the web interface, in conjunction with the Atom Editor, rather than installing a local copy of Node.js. As such, any time you make a change using the web interface, you must issue a `pull` request from the Atom Editor before pushing any files to the repo.
+====
+
+. Navigate to the cloned repo Actions tab.
+. Click the "`New Workflow`" link, followed by the "`Skip this and set up a workflow yourself`" link.
+.. Copy and paste the "`main.yml`" template as a new workflow.
++
+--
+IMPORTANT: The commit of the workflow file will sever our fork relationship with the `antora-ui-default` repository making the `jme-ui` repo independant.
+.main.yml
+
+```
+name: Build Site
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  build:
+
+    #Static version is used to maintain stability
+    runs-on: ubuntu-18.04
+
+    strategy:
+      matrix:
+        #Static version is used to maintain stability
+        node-version: [12.17.0]
+
+    steps:
+    - name: Clone the repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+
+    - name: Cache node modules
+      uses: actions/cache@v2
+      env:
+        cache-name: cache-node-modules
+      with:
+        # npm cache files are stored in `~/.npm` on Linux/macOS
+        path: ~/.npm
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    # Uncomment when adding or updating dependencies in the package-lock.json
+    # and package.json files for ci.
+#    - name: Install Node
+#      run: npm i
+
+    # Uncomment after package-lock.json and package.json files are updated.
+    - name: Run with CI
+      run: npm ci
+
+#    - name: Audit Depends
+#      run: npm audit
+
+#    - name: Build Bundle
+#      run: gulp bundle
+
+
+    # Detects any updates to package-lock.json and package.json and commits the
+    # files to root.
+    # see:
+    # https://github.com/marketplace/actions/add-commit?version=v4.1.0
+    # for use options.
+    - name: Commit Packages
+      uses: EndBug/add-and-commit@v4
+      with:
+        message: "Commit files for CI workflow"
+        # Commits these files to root if and only if there are changes.
+        add: "package-lock.json package.json ./build/ui-bundle.zip"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+The main points of interest are as follows.
+
+```
+#Static version is used to maintain stability
+runs-on: ubuntu-18.04
+
+#Static version is used to maintain stability
+node-version: [12.16.3]
+```
+
+With the above lines, we are using a static version of Node and Ubuntu so that we maintain control of when the repository is updated. Updates can potentially break things and we would find out after the fact rather than knowing immediately that there was a problem.
+
+```
+- name: Cache node modules
+  uses: actions/cache@v2
+```
+The above command sets up out Node cache. Whenever the package-lock.json file changes, the cache will update.
+
+see: link:https://help.github.com/en/actions/configuring-and-managing-workflows/caching-dependencies-to-speed-up-workflows[Caching dependencies to speed up workflows]
+
+```
+add: "package-lock.json package.json"
+```
+This line will commit the files `package-lock.json` and `package.json` if there are any changes to the files.
+
+```
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+The `secrets.GITHUB_TOKEN` doesn't have authorization to create any successive events so we avoid an infinate loop of commit, run workflows, commit, run workflows.
+--
+
+== Audit Depends
+
+As of this writing, an Audit will fail with a warning about a transient dependency `yargs-parser` vulnerability. Reading the build log shows the problem.
+
+```
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                Manual Review                                 │
+│            Some vulnerabilities require your attention to resolve            │
+│                                                                              │
+│         Visit https://go.npm.me/audit-guide for additional guidance          │
+└──────────────────────────────────────────────────────────────────────────────┘
+┌───────────────┬──────────────────────────────────────────────────────────────┐
+│ Low           │ Prototype Pollution                                          │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Package       │ yargs-parser                                                 │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Patched in    │ >=13.1.2 <14.0.0 || >=15.0.1 <16.0.0 || >=18.1.2             │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Dependency of │ gulp [dev]                                                   │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Path          │ gulp > gulp-cli > yargs > yargs-parser                       │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ More info     │ https://npmjs.com/advisories/1500                            │
+└───────────────┴──────────────────────────────────────────────────────────────┘
+found 1 low severity vulnerability in 1353 scanned packages
+  1 vulnerability requires manual review. See the full report for details.
+##[error]Process completed with exit code 1.
+```
+
+There are breaking changes between the current version of yargs (7.1.0) and the 13.1.2 minimum version that is required to fix the warning so we will skip using the `Audit Depends` command for now.
+
+== Configure Gulp
+
+We have a sucessful build so now we need to configure `Gulp` to build our ui and the `EndBug/add-and-commit@v4` action to commit our ui to the repo.
+
+. From the (GWI), edit the workflow `main.yml` file:
+.. Uncomment the `Build Preview` command.
++
+```
+    - name: Build Bundle
+      run: gulp bundle
+```
+.. Add our built ui file `./build/ui-bundle.zip` to the `Commit Packages` command.
++
+```
+add: "package-lock.json package.json ./build/ui-bundle.zip"
+```
+.. Select the btn:[Start Commit] button, enter a message and commit.
+. From the Atom Editor:
+.. Issue a pull request.
+.. Edit the .gitignore file:
++
+```
+/build/*
+!/build/ui-bundle.zip
+```
+.. Stage, commit and push the file to the repo.
+
+The `ui-bundle.zip` is now located in the root folder and available for use via the docs.jmonkeyengine.org playbook ui bundle url.
