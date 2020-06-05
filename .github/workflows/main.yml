@@ -1,3 +1,15 @@
+# This file can be used to configure the Node.js build for Antora ui without
+# having Node installed locally. See 'setup-docs/setup.adoc' in the root of this
+# repo for details of how to use this file.
+#
+# The action add-and-commit will commit package-lock.json and package.json if
+# changes are made to the files.
+#
+# If the package-lock.json or package.json files are updated or new depends are
+# installed, the 'npm ci' should always be ran thereafter to speed up build
+# times. When ci is active, the package-lock.json and package.json files in root
+# will not be updated.
+
 name: Build UI
 
 on:
@@ -40,6 +52,7 @@ jobs:
 #    - name: Audit Depends
 #      run: npm audit
 
+    # Build the ui.
     - name: Build Bundle
       id: build_bundle
       run: gulp bundle
