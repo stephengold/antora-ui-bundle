@@ -51,6 +51,7 @@ jobs:
 
     - name: Upload Release  
       if: contains(github.ref, 'v1')
+      id: upload_release
       uses: "marvinpinto/action-automatic-releases@latest"      
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -74,6 +75,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Dispatch event
+      if: ${{ !steps.upload_release.outcome.failure }}
       run: |
        curl -X POST https://api.github.com/repos/mitm001/docs.jmonkeyengine.org/dispatches \
        --user ${{ secrets.JME_UI_DISPATCH }} \
