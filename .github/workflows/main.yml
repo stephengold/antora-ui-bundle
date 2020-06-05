@@ -2,10 +2,9 @@ name: Build Site
 
 on:
   push:
-    branches: [ master ] 
-#    tags:
-#      - v*  
-  pull_request:   
+    branches: [ master ]
+
+  pull_request:
 
 jobs:
   build:
@@ -43,23 +42,8 @@ jobs:
 
     - name: Build Bundle
       id: build_bundle
-      run: gulp bundle    
+      run: gulp bundle
 
-#    - name: Set output
-#      id: vars
-#      run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
-
-#    - name: Upload Release  
-#      if: contains(github.ref, 'v')
-#      id: upload_release
-#      uses: "marvinpinto/action-automatic-releases@latest"      
-#      with:
-#          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-#          automatic_release_tag: ${{ steps.vars.outputs.tag }}
-#          prerelease: false
-#          title: "jme-ui"
-#          files: ./build/ui-bundle.zip           
-          
     # Detects any updates to package-lock.json and package.json and commits the
     # files to root.
     # see:
@@ -73,11 +57,3 @@ jobs:
         add: "package-lock.json package.json"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-#    - name: Dispatch event
-#      if: ( steps.upload_release.outcome  != 'failure' ) 
-#        &&  ( steps.upload_release.outcome != 'skipped' )
-#      run: |
-#       curl -X POST https://api.github.com/repos/mitm001/docs.jmonkeyengine.org/dispatches \
-#       --user ${{ secrets.JME_UI_DISPATCH }} \
-#       --data '{"event_type":"ui-build","client_payload":{"sha": "${{ github.sha }}"}}'
