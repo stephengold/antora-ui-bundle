@@ -44,13 +44,17 @@ jobs:
     - name: Build Bundle
       id: build_bundle
       run: gulp bundle    
-     
+
+    - name: Set output
+      id: vars
+      run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+
     - name: Upload Release  
       if: contains(github.ref, 'v1')
       uses: "marvinpinto/action-automatic-releases@latest"      
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: ${GITHUB_REF#refs/*/}
+          automatic_release_tag: ${{ steps.vars.outputs.tag }}
           prerelease: false
           title: "jme-ui"
           files: ./build/ui-bundle.zip           
