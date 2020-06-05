@@ -56,7 +56,7 @@ jobs:
           echo ${{ steps.vars.outputs.tag }}   
     
     - name: Upload Release  
-      if: contains(github.ref, 'ref/head/v*')
+      if: contains(github.ref, 'ref/head/v')
       uses: "marvinpinto/action-automatic-releases@latest"      
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
