@@ -75,8 +75,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Dispatch event
-      if: ( ${{ steps.upload_release.outcome }} != ${{ FAILURE }} ) 
-        &&  ( ${{ steps.upload_release.outcome }} != ${{ SKIPPED }} )
+      if: ( steps.upload_release.outcome  != 'failure' ) 
+        &&  ( steps.upload_release.outcome != 'skipped' }} )
       run: |
        curl -X POST https://api.github.com/repos/mitm001/docs.jmonkeyengine.org/dispatches \
        --user ${{ secrets.JME_UI_DISPATCH }} \
