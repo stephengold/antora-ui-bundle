@@ -44,7 +44,8 @@ jobs:
       run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
 
     # Deploy a new release.
-    # see: https://github.com/marvinpinto/action-automatic-releases
+    # see: https://github.com/marvinpinto/action-automatic-releases for param
+    # options.
     - name: Upload Release
       if: ( steps.build_bundle.outcome  != 'failure' )
         &&  ( steps.build_bundle.outcome != 'skipped' )
