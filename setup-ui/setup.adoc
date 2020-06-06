@@ -221,3 +221,11 @@ jobs:
 == Activating Dispatch Event
 
 To activate the `Docs Dispatch Event` command, it must share a personal access token, with permissions `public_repo`, with the jMonkeyEngine Wiki.
+
+
+== Configure antora.yml
+
+Edit the `docs/antora.yml`: t be jMonkeyEngine specific.
+
+.docs/antoar.yml
+```
