@@ -73,7 +73,7 @@
   --jme-home-o-icon: url(../img/home-o_light.svg);
   --jme-menu-icon: url(../img/menu_light.svg);
   --jme-back-icon: url(../img/back_light.svg);
-  /* unused? came from antora default ui*/
+  /* unused? came from antora default ui */
   --jme-close-icon: url(../img/close_light.svg);
 }
 
@@ -82,6 +82,6 @@
   --jme-home-o-icon: url(../img/home-o.svg);
   --jme-menu-icon: url(../img/menu.svg);
   --jme-back-icon: url(../img/back.svg);
-  /* unused? came from antora default ui*/
+  /* unused? came from antora default ui */
   --jme-close-icon: url(../img/close.svg);
-} 
+}
