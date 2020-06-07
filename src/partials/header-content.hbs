@@ -1,7 +1,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a href="/" class="navbar-item">
+      <a href="{{{or site.url (or siteRootUrl siteRootPath)}}}" class="navbar-item">
         <img alt="" src="{{{uiRootPath}}}/img/iconx128.png" width="32" type="image/x-icon">
       </a>
       <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}">{{site.title}}</a>
