@@ -43,7 +43,7 @@
   --jme-footer-font-color: #5d5d5d;
   --jme-footer-link-font-color: #191919;
   --jme-footer-background: #e1e1e1;
-  --jme-panel-background: #e1e1e1;
+  --jme-panel-background: #fafafa;
   --jme-link-font-color: #1565c0;
   --jme-link_hover-font-color: #104d92;
   --jme-quote-border-color: #5d5d5d;
@@ -53,7 +53,7 @@
   --jme-page-version-menu-background: #f0f0f0;
   --jme-toolbar-muted-color: #8e8e8e;
   --jme-example-background: #fff;
-  --jme-admonition-background: #e1e1e1;
+  --jme-admonition-background: #fafafa;
   --jme-navbar-menu-background: #fff;
 }
 
