@@ -20,7 +20,7 @@ We use the pre-configured `package-lock` and `package-lock.json` files included 
 . From a GitHub account repository tab, select the btn:[New] button.
 . On the "`Create a new repository`" page, select the 'Import a repository' link.
 . Enter the repository link `+++https://gitlab.com/antora/antora-ui-default.git+++`.
-. Enter a name of `jme-ui`.
+. Enter a name of `wiki-ui`.
 . Click the btn:[Begin Import] button when ready.
 
 == Workflow Setup
@@ -76,6 +76,7 @@ jobs:
     - name: Clone the repo
       uses: actions/checkout@v2
       with:
+        # Number of commits to fetch. 0 indicates all history.
         fetch-depth: 1
 
     - name: Use Node.js ${{ matrix.node-version }}
@@ -205,7 +206,7 @@ jobs:
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
-          title: format('jme-ui {0}', ${{ steps.vars.outputs.tag }})
+          title: format('wiki-ui {0}', ${{ steps.vars.outputs.tag }})
           files: ./build/ui-bundle.zip
 
     # Notify the docs repo we have a new ui.
@@ -213,7 +214,7 @@ jobs:
       if: ( steps.upload_release.outcome  != 'failure' )
         &&  ( steps.upload_release.outcome != 'skipped' )
       run: |
-       curl -X POST https://api.github.com/repos/mitm001/docs.jmonkeyengine.org/dispatches \
+       curl -X POST https://api.github.com/repos/jMonkeyEngine/wiki/dispatches \
        --user ${{ secrets.JME_UI_DISPATCH }} \
        --data '{"event_type":"ui-build","client_payload":{"sha": "${{ github.sha }}"}}'
 ```
@@ -225,7 +226,13 @@ To activate the `Docs Dispatch Event` command, it must share a personal access t
 
 == Configure antora.yml
 
-Edit the `docs/antora.yml`: t be jMonkeyEngine specific.
+Edit the `docs/antora.yml`: to be jMonkeyEngine specific.
 
-.docs/antoar.yml
+.docs/antora.yml
+```
+name: jmonkeyengine-ui
+title: jMonkeyEngine UI
+version: master
+nav:
+- modules/ROOT/nav.adoc
 ```

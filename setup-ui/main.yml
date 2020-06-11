@@ -33,6 +33,7 @@ jobs:
     - name: Clone the repo
       uses: actions/checkout@v2
       with:
+        # Number of commits to fetch. 0 indicates all history.
         fetch-depth: 1
 
     - name: Use Node.js ${{ matrix.node-version }}
