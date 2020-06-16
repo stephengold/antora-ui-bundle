@@ -89,9 +89,9 @@
   --body-line-height: 1.15;
   --body-font-color: var(--jme-body-font-color);
   --body-font-family: "Roboto", sans-serif;
-  --body-font-weight-bold: 500;
+  --body-font-weight-bold: 600;
   --monospace-font-family: "Roboto Mono", monospace;
-  --monospace-font-weight-bold: 500;
+  --monospace-font-weight-bold: 600;
   /* base */
   --body-background: var(--jme-background);
   --panel-background: var(--jme-panel-background);
