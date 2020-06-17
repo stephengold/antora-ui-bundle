@@ -1,4 +1,5 @@
-# This workflow will push a release whenver a tag is pushed to the repository.
+# This workflow will deploy a new release
+# whenver a tag beginning with "v" is pushed to the repository.
 name: "tagged-release"
 
 on:
@@ -9,12 +10,12 @@ on:
 jobs:
   tagged-release:
 
-    #Static version is used to maintain stability
+    #specify version to maintain stability
     runs-on: ubuntu-18.04
 
     strategy:
       matrix:
-        #Static version is used to maintain stability
+        #specify version to maintain stability
         node-version: [12.17.0]
 
     steps:
@@ -29,7 +30,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     # Do not use this workflow with the install command. A stable environment is
-    # already expected for releases.
+    # expected for releases.
     - name: Run with CI
       run: npm ci
 
@@ -56,12 +57,3 @@ jobs:
           prerelease: false
           title: format('jme-ui {0}', ${{ steps.vars.outputs.tag }})
           files: ./build/ui-bundle.zip
-
-    # Notify the docs repo we have a new ui.
-    - name: Docs Dispatch Event
-      if: ( steps.upload_release.outcome  != 'failure' )
-        &&  ( steps.upload_release.outcome != 'skipped' )
-      run: |
-       curl -X POST https://api.github.com/repos/mitm001/docs.jmonkeyengine.org/dispatches \
-       --user ${{ secrets.JME_UI_DISPATCH }} \
-       --data '{"event_type":"ui-build","client_payload":{"sha": "${{ github.sha }}"}}'
