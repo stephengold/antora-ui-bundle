@@ -10,13 +10,13 @@ on:
 jobs:
   tagged-release:
 
-    #specify version to maintain stability
+    # Specify environment (to maintain stability).
     runs-on: ubuntu-18.04
 
     strategy:
       matrix:
-        #specify version to maintain stability
-        node-version: [12.17.0]
+        # Specify Node.js version (to maintain stability).
+        node-version: [12.18.0]
 
     steps:
     - name: Clone the repo
@@ -29,12 +29,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    # Do not use this workflow with the install command. A stable environment is
-    # expected for releases.
+    # Do not use the install command (to maintain stability).
     - name: Run with CI
       run: npm ci
 
-    # Build to ui for release.
+    # Build the Antora UI bundle for release.
     - name: Build Bundle
       id: build_bundle
       run: gulp bundle
@@ -55,5 +54,4 @@ jobs:
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
-          title: format('jme-ui {0}', ${{ steps.vars.outputs.tag }})
           files: ./build/ui-bundle.zip
