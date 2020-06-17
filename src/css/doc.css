@@ -75,7 +75,6 @@
   text-decoration: none;
   width: 1.75ex;
   margin-left: -1.5ex;
-  visibility: hidden;
   font-size: 0.8em;
   font-weight: normal;
   padding-top: 0.05em;
@@ -88,15 +87,6 @@
 .doc h5 .anchor::before,
 .doc h6 .anchor::before {
   content: "\00a7";
-}
-
-.doc h1:hover .anchor,
-.doc h2:hover .anchor,
-.doc h3:hover .anchor,
-.doc h4:hover .anchor,
-.doc h5:hover .anchor,
-.doc h6:hover .anchor {
-  visibility: visible;
 }
 
 .doc p {
