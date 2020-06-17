@@ -1,9 +1,10 @@
+# GitHub workflow for commits pushed to the antori-ui-bundle repo
+
 # This workflow will commit "package-lock.json" and "package.json" if
 # changes occur to those files.
 # Committing such changes speeds up future builds.
 
 name: CI at GitHub
-
 on:
   push:
     branches: [ master ]
@@ -11,15 +12,12 @@ on:
 
 jobs:
   build:
-
     # Specify environment (to maintain stability).
     runs-on: ubuntu-18.04
-
     strategy:
       matrix:
         # Specify Node.js version (to maintain stability).
         node-version: [12.18.0]
-
     steps:
     - name: Clone the repo
       uses: actions/checkout@v2
@@ -33,8 +31,8 @@ jobs:
     - name: Run with CI
       run: npm ci
 
-#    - name: Audit Depends
-#      run: npm audit
+    - name: Scan for Vulnerabilities
+      run: npm audit
 
     # Build the Antora UI bundle for release.
     - name: Build Bundle
