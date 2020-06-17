@@ -2,7 +2,7 @@
 # changes occur to those files.
 # Committing such changes speeds up future builds.
 
-name: Build UI
+name: CI at GitHub
 
 on:
   push:
