@@ -3,7 +3,7 @@ footer.footer {
   color: var(--footer-font-color);
   font-size: calc(15 / var(--rem-base) * 1rem);
   line-height: var(--footer-line-height);
-  padding: 1.5rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
 }
 
 .footer p {
