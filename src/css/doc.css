@@ -1,7 +1,7 @@
 .doc {
   color: var(--doc-font-color);
   font-size: var(--doc-font-size);
-  hyphens: auto;
+  hyphens: none;
   line-height: var(--doc-line-height);
   margin: var(--doc-margin);
   max-width: var(--doc-max-width);
