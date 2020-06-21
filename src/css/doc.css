@@ -124,7 +124,6 @@
 
 .doc pre {
   font-size: calc(16 / var(--rem-base) * 1rem);
-  line-height: 1.5;
   margin: 0;
 }
 
