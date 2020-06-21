@@ -21,14 +21,13 @@
 
 .hljs-string,
 .hljs-doctag {
-  color: #f22;
+  color: #008080;
 }
 
 .hljs-title,
 .hljs-section,
 .hljs-selector-id {
-  color: #900;
-  font-weight: var(--monospace-font-weight-bold);
+  color: #f22;
 }
 
 .hljs-subst {
