@@ -176,14 +176,11 @@
 }
 
 .doc table.tableblock thead th {
-  border-bottom: 2.5px solid var(--table-border-color);
   padding: 0.5rem;
 }
 
 .doc table.tableblock td,
 .doc table.tableblock > :not(thead) th {
-  border-top: 1px solid var(--table-border-color);
-  border-bottom: 1px solid var(--table-border-color);
   padding: 0.5rem;
 }
 
