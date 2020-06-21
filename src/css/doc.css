@@ -229,6 +229,12 @@
   font-size: calc(15 / var(--rem-base) * 1rem);
 }
 
+.doc .admonitionblock td.content code {
+  color: var(--tip-color);
+  font-size: 0.9em;
+  padding: 0.125em 0.25em;
+}
+
 .doc .admonitionblock > table {
   border-collapse: collapse;
   table-layout: fixed;
