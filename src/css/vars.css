@@ -16,11 +16,11 @@
   --jme-footer-background: var(--color-jet-20);
   --jme-panel-background: var(--color-jet-30);
   --jme-highlight-comment-font-color: var(--color-gray-30);
-  --jme-highlight-keyword-font-color: var(--color-gold);
+  --jme-highlight-keyword-font-color: var(--color-amber);
   --jme-highlight-literal-font-color: var(--color-cyan);
   --jme-highlight-new_method-font-color: var(--color-red);
-  --jme-link-font-color: var(--color-gold);
-  --jme-link_hover-font-color: var(--color-gold);
+  --jme-link-font-color: var(--color-amber);
+  --jme-link_hover-font-color: var(--color-amber);
   --jme-quote-border-color: var(--color-white);
   --jme-sidebar-background: var(--color-jet-20);
   --jme-nav-muted-color: var(--color-smoke-90);
@@ -50,7 +50,7 @@
   --jme-footer-background: var(--color-smoke-90);
   --jme-panel-background: var(--color-white);
   --jme-highlight-comment-font-color: var(--color-gray-30);
-  --jme-highlight-keyword-font-color: var(--color-gold);
+  --jme-highlight-keyword-font-color: var(--color-amber);
   --jme-highlight-literal-font-color: var(--color-cyan);
   --jme-highlight-new_method-font-color: var(--color-red);
   --jme-link-font-color: var(--color-blue);
@@ -80,9 +80,10 @@
   --color-jet-30: #424242;
   --color-jet-70: #222;
   --color-black: #000;
+
+  --color-amber: #d17104;
   --color-blue: #1565c0;
   --color-cyan: #008080;
-  --color-gold: #d17104;
   --color-green: #218f26;
   --color-red: #f22;
   --color-purple: #a0439c;
@@ -146,7 +147,7 @@
   --note-on-color: var(--color-white);
   --tip-color: var(--color-green);
   --tip-on-color: var(--color-white);
-  --warning-color: var(--color-gold);
+  --warning-color: var(--color-amber);
   --warning-on-color: var(--color-white);
   /* doc */
   --doc-font-color: var(--jme-doc-font-color);
