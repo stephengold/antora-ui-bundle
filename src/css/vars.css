@@ -2,6 +2,7 @@
   --jme-background: #383838;
   --jme-body-font-color: var(--color-smoke-90);
   --jme-doc-font-color: var(--color-smoke-90);
+  --jme-navbar: var(--color-jet-70);
   --jme-navbar-font-color: var(--color-white);
   --jme-nav-heading-font-color: var(--color-smoke-90);
   --jme-toolbar-font-color: var(--color-white);
@@ -14,8 +15,12 @@
   --jme-footer-link-font-color: #191919;
   --jme-footer-background: var(--color-jet-20);
   --jme-panel-background: #383838;
-  --jme-link-font-color: #fbbd08;
-  --jme-link_hover-font-color: #fbbd08;
+  --jme-highlight-comment-font-color: #998;
+  --jme-highlight-keyword-font-color: var(--color-gold);
+  --jme-highlight-literal-font-color: var(--color-cyan);
+  --jme-highlight-new_method-font-color: var(--color-red);
+  --jme-link-font-color: var(--color-gold);
+  --jme-link_hover-font-color: var(--color-gold);
   --jme-quote-border-color: var(--color-white);
   --jme-sidebar-background: var(--color-jet-20);
   --jme-nav-muted-color: var(--color-smoke-90);
@@ -29,8 +34,9 @@
 
 [data-theme="light"] {
   --jme-background: var(--color-white);
-  --jme-body-font-color: #222;
-  --jme-doc-font-color: #222;
+  --jme-body-font-color: var(--color-jet-70);
+  --jme-doc-font-color: var(--color-jet-70);
+  --jme-navbar: var(--color-jet-70);
   --jme-navbar-font-color: var(--color-white);
   --jme-nav-heading-font-color: var(--color-jet-20);
   --jme-toolbar-font-color: var(--color-gray-70);
@@ -43,8 +49,12 @@
   --jme-footer-link-font-color: #191919;
   --jme-footer-background: var(--color-smoke-90);
   --jme-panel-background: var(--color-white);
-  --jme-link-font-color: #1565c0;
-  --jme-link_hover-font-color: #1565c0;
+  --jme-highlight-comment-font-color: #998;
+  --jme-highlight-keyword-font-color: var(--color-gold);
+  --jme-highlight-literal-font-color: var(--color-cyan);
+  --jme-highlight-new_method-font-color: var(--color-red);
+  --jme-link-font-color: var(--color-blue);
+  --jme-link_hover-font-color: var(--color-blue);
   --jme-quote-border-color: var(--color-gray-70);
   --jme-sidebar-background: var(--color-smoke-90);
   --jme-nav-muted-color: var(--color-gray-70);
@@ -68,9 +78,14 @@
   --color-gray-70: #5d5d5d;
   --color-jet-20: #4a4a4a;
   --color-jet-30: #424242;
+  --color-jet-70: #222;
   --color-black: #000;
-  /* jMonkeyEngine related colors */
-  --jme-navbar: #222;
+  --color-blue: #1565c0;
+  --color-cyan: #008080;
+  --color-gold: #fbbd08;
+  --color-green: #41af46;
+  --color-red: #f22;
+  --color-purple: #a0439c;
   /* fonts */
   --rem-base: 18;
   /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
@@ -123,13 +138,13 @@
   --toc-border-color: var(--panel-border-color);
   --toc-line-height: 1.2;
   /* admonitions */
-  --caution-color: #a0439c;
+  --caution-color: var(--color-purple);
   --caution-on-color: var(--color-white);
   --important-color: #d32f2f;
   --important-on-color: var(--color-white);
   --note-color: #217ee7;
   --note-on-color: var(--color-white);
-  --tip-color: #41af46;
+  --tip-color: var(--color-green);
   --tip-on-color: var(--color-white);
   --warning-color: #e18114;
   --warning-on-color: var(--color-white);
