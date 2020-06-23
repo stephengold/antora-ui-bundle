@@ -214,6 +214,7 @@
 
 .doc .admonitionblock p,
 .doc .admonitionblock td.content {
+  border-radius: 0.75rem;
   font-size: calc(16 / var(--rem-base) * 1rem);
 }
 
