@@ -180,7 +180,7 @@
   --pre-border-color: var(--color-gray-30);
   --pre-annotation-font-color: var(--color-gray-30);
   --quote-background: var(--panel-background);
-  --quote-border-color: var(--color-gray-70);
+  --quote-border-color: var(--color-gray-30);
   --quote-font-color: var(--jme-quote-font-color);
   --quote-attribution-font-color: var(--jme-quote-attribution-font-color);
   --sidebar-background: var(--jme-sidebar-background);
