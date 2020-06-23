@@ -1,5 +1,5 @@
 [data-theme="dark"] {
-  --jme-background: #383838;
+  --jme-background: var(--color-jet-30);
   --jme-body-font-color: var(--color-smoke-90);
   --jme-doc-font-color: var(--color-smoke-90);
   --jme-navbar: var(--color-jet-70);
@@ -12,10 +12,10 @@
   --jme-quote-font-color: var(--color-smoke-90);
   --jme-quote-attribution-font-color: var(--color-gray-10);
   --jme-footer-font-color: var(--color-smoke-70);
-  --jme-footer-link-font-color: #191919;
+  --jme-footer-link-font-color: var(--color-jet-70);
   --jme-footer-background: var(--color-jet-20);
-  --jme-panel-background: #383838;
-  --jme-highlight-comment-font-color: #998;
+  --jme-panel-background: var(--color-jet-30);
+  --jme-highlight-comment-font-color: var(--color-gray-30);
   --jme-highlight-keyword-font-color: var(--color-gold);
   --jme-highlight-literal-font-color: var(--color-cyan);
   --jme-highlight-new_method-font-color: var(--color-red);
@@ -24,7 +24,7 @@
   --jme-quote-border-color: var(--color-white);
   --jme-sidebar-background: var(--color-jet-20);
   --jme-nav-muted-color: var(--color-smoke-90);
-  --jme-nav-secondary-background: #383838;
+  --jme-nav-secondary-background: var(--color-jet-30);
   --jme-page-version-menu-background: var(--color-jet-20);
   --jme-toolbar-muted-color: var(--color-white);
   --jme-example-background: var(--color-jet-20);
@@ -46,10 +46,10 @@
   --jme-quote-font-color: var(--color-gray-70);
   --jme-quote-attribution-font-color: var(--color-gray-30);
   --jme-footer-font-color: var(--color-gray-70);
-  --jme-footer-link-font-color: #191919;
+  --jme-footer-link-font-color: var(--color-jet-70);
   --jme-footer-background: var(--color-smoke-90);
   --jme-panel-background: var(--color-white);
-  --jme-highlight-comment-font-color: #998;
+  --jme-highlight-comment-font-color: var(--color-gray-30);
   --jme-highlight-keyword-font-color: var(--color-gold);
   --jme-highlight-literal-font-color: var(--color-cyan);
   --jme-highlight-new_method-font-color: var(--color-red);
@@ -82,8 +82,8 @@
   --color-black: #000;
   --color-blue: #1565c0;
   --color-cyan: #008080;
-  --color-gold: #fbbd08;
-  --color-green: #41af46;
+  --color-gold: #d17104;
+  --color-green: #218f26;
   --color-red: #f22;
   --color-purple: #a0439c;
   /* fonts */
@@ -140,13 +140,13 @@
   /* admonitions */
   --caution-color: var(--color-purple);
   --caution-on-color: var(--color-white);
-  --important-color: #d32f2f;
+  --important-color: var(--color-red);
   --important-on-color: var(--color-white);
-  --note-color: #217ee7;
+  --note-color: var(--color-blue);
   --note-on-color: var(--color-white);
   --tip-color: var(--color-green);
   --tip-on-color: var(--color-white);
-  --warning-color: #e18114;
+  --warning-color: var(--color-gold);
   --warning-on-color: var(--color-white);
   /* doc */
   --doc-font-color: var(--jme-doc-font-color);
