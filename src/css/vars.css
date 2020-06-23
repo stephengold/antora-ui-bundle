@@ -148,10 +148,10 @@
   --page-version-menu-background: var(--jme-page-version-menu-background);
   --page-version-missing-font-color: var(--color-gray-30);
   /* toc */
-  --toc-border-color: var(--jme-background);
+  --toc-background: var(--jme-sidebar-background);
   --toc-font-color: var(--jme-toc-font-color);
   --toc-heading-font-color: var(--doc-font-color);
-  --toc-line-height: 1.2;
+  --toc-line-height: 1;
   /* admonitions */
   --caution-color: var(--color-red);
   --caution-on-color: var(--color-white);
