@@ -1,4 +1,20 @@
 [data-theme="dark"] {
+  --color-white: #fff;
+  --color-smoke: #e1e1e1;
+  --color-gray-10: #c1c1c1;
+  --color-gray-30: #8e8e8e;
+  --color-gray-50: #808080;
+  --color-gray-70: #5d5d5d;
+  --color-jet-20: #4a4a4a;
+  --color-jet-30: #424242;
+  --color-jet-70: #222;
+  --color-black: #000;
+  --color-amber: #d17104;
+  --color-blue: #1565c0;
+  --color-cyan: #008080;
+  --color-green: #218f26;
+  --color-red: #f22;
+  --color-purple: #a0439c;
   --jme-background: var(--color-jet-30);
   --jme-body-font-color: var(--color-smoke);
   --jme-doc-font-color: var(--color-smoke);
@@ -34,6 +50,22 @@
 }
 
 [data-theme="light"] {
+  --color-white: #fff;
+  --color-smoke: #e1e1e1;
+  --color-gray-10: #c1c1c1;
+  --color-gray-30: #8e8e8e;
+  --color-gray-50: #808080;
+  --color-gray-70: #5d5d5d;
+  --color-jet-20: #4a4a4a;
+  --color-jet-30: #424242;
+  --color-jet-70: #222;
+  --color-black: #000;
+  --color-amber: #d17104;
+  --color-blue: #1565c0;
+  --color-cyan: #008080;
+  --color-green: #218f26;
+  --color-red: #f22;
+  --color-purple: #a0439c;
   --jme-background: var(--color-white);
   --jme-body-font-color: var(--color-jet-70);
   --jme-doc-font-color: var(--color-jet-70);
@@ -69,23 +101,6 @@
 }
 
 :root {
-  /* colors */
-  --color-white: #fff;
-  --color-smoke: #e1e1e1;
-  --color-gray-10: #c1c1c1;
-  --color-gray-30: #8e8e8e;
-  --color-gray-50: #808080;
-  --color-gray-70: #5d5d5d;
-  --color-jet-20: #4a4a4a;
-  --color-jet-30: #424242;
-  --color-jet-70: #222;
-  --color-black: #000;
-  --color-amber: #d17104;
-  --color-blue: #1565c0;
-  --color-cyan: #008080;
-  --color-green: #218f26;
-  --color-red: #f22;
-  --color-purple: #a0439c;
   /* fonts */
   --rem-base: 18;
   /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
