@@ -15,6 +15,7 @@
   --jme-footer-link-font-color: var(--color-jet-70);
   --jme-footer-background: var(--color-jet-20);
   --jme-panel-background: var(--color-jet-30);
+  --jme-code-font-color: var(--color-green);
   --jme-highlight-comment-font-color: var(--color-gray-30);
   --jme-highlight-keyword-font-color: var(--color-amber);
   --jme-highlight-literal-font-color: var(--color-cyan);
@@ -49,6 +50,7 @@
   --jme-footer-link-font-color: var(--color-jet-70);
   --jme-footer-background: var(--color-smoke-90);
   --jme-panel-background: var(--color-white);
+  --jme-code-font-color: var(--color-green);
   --jme-highlight-comment-font-color: var(--color-gray-30);
   --jme-highlight-keyword-font-color: var(--color-amber);
   --jme-highlight-literal-font-color: var(--color-cyan);
