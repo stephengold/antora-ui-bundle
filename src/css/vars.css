@@ -1,18 +1,18 @@
 [data-theme="dark"] {
   --jme-background: var(--color-jet-30);
-  --jme-body-font-color: var(--color-smoke-90);
-  --jme-doc-font-color: var(--color-smoke-90);
+  --jme-body-font-color: var(--color-smoke);
+  --jme-doc-font-color: var(--color-smoke);
   --jme-navbar: var(--color-jet-70);
   --jme-navbar-font-color: var(--color-white);
-  --jme-nav-heading-font-color: var(--color-smoke-90);
+  --jme-nav-heading-font-color: var(--color-smoke);
   --jme-toolbar-font-color: var(--color-white);
-  --jme-toc-font-color: var(--color-smoke-90);
+  --jme-toc-font-color: var(--color-smoke);
   --jme-heading-font-color: var(--color-white);
   --jme-caption-font-color: var(--color-gray-10);
-  --jme-quote-font-color: var(--color-smoke-90);
+  --jme-quote-font-color: var(--color-smoke);
   --jme-quote-attribution-font-color: var(--color-gray-10);
-  --jme-footer-font-color: var(--color-smoke-70);
-  --jme-footer-link-font-color: var(--color-jet-70);
+  --jme-footer-font-color: var(--color-smoke);
+  --jme-footer-link-font-color: var(--color-jet-90);
   --jme-footer-background: var(--color-jet-20);
   --jme-panel-background: var(--color-jet-30);
   --jme-code-font-color: var(--color-green);
@@ -24,7 +24,7 @@
   --jme-link_hover-font-color: var(--color-amber);
   --jme-quote-border-color: var(--color-white);
   --jme-sidebar-background: var(--color-jet-20);
-  --jme-nav-muted-color: var(--color-smoke-90);
+  --jme-nav-muted-color: var(--color-smoke);
   --jme-nav-secondary-background: var(--color-jet-30);
   --jme-page-version-menu-background: var(--color-jet-20);
   --jme-toolbar-muted-color: var(--color-white);
@@ -48,7 +48,7 @@
   --jme-quote-attribution-font-color: var(--color-gray-30);
   --jme-footer-font-color: var(--color-gray-70);
   --jme-footer-link-font-color: var(--color-jet-70);
-  --jme-footer-background: var(--color-smoke-90);
+  --jme-footer-background: var(--color-smoke);
   --jme-panel-background: var(--color-white);
   --jme-code-font-color: var(--color-green);
   --jme-highlight-comment-font-color: var(--color-gray-30);
@@ -58,22 +58,20 @@
   --jme-link-font-color: var(--color-blue);
   --jme-link_hover-font-color: var(--color-blue);
   --jme-quote-border-color: var(--color-gray-70);
-  --jme-sidebar-background: var(--color-smoke-90);
+  --jme-sidebar-background: var(--color-smoke);
   --jme-nav-muted-color: var(--color-gray-70);
-  --jme-nav-secondary-background: var(--color-smoke-70);
-  --jme-page-version-menu-background: var(--color-smoke-70);
+  --jme-nav-secondary-background: var(--color-smoke);
+  --jme-page-version-menu-background: var(--color-smoke);
   --jme-toolbar-muted-color: var(--color-gray-30);
   --jme-example-background: var(--color-white);
-  --jme-admonition-background: var(--color-smoke-90);
+  --jme-admonition-background: var(--color-smoke);
   --jme-navbar-menu-background: var(--color-white);
 }
 
 :root {
   /* colors */
   --color-white: #fff;
-  --color-smoke-50: #f5f5f5;
-  --color-smoke-70: #f0f0f0;
-  --color-smoke-90: #e1e1e1;
+  --color-smoke: #e1e1e1;
   --color-gray-10: #c1c1c1;
   --color-gray-30: #8e8e8e;
   --color-gray-50: #808080;
@@ -118,7 +116,7 @@
   --navbar-menu-border-color: var(--panel-border-color);
   --navbar-menu-background: var(--jme-navbar-menu-background);
   --navbar-menu-font-color: var(--body-font-color);
-  --navbar-menu_hover-background: var(--color-smoke-50);
+  --navbar-menu_hover-background: var(--color-white);
   /* nav */
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
@@ -164,7 +162,7 @@
   --link-font-color: var(--jme-link-font-color);
   --link_hover-font-color: var(--jme-link_hover-font-color);
   --link_unresolved-font-color: var(--important-color);
-  --abstract-background: var(--color-smoke-70);
+  --abstract-background: var(--color-smoke);
   --abstract-font-color: var(--color-jet-20);
   --abstract-border-color: var(--panel-border-color);
   --admonition-background: var(--jme-admonition-background);
