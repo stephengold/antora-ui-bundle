@@ -139,9 +139,9 @@
   --toc-border-color: var(--panel-border-color);
   --toc-line-height: 1.2;
   /* admonitions */
-  --caution-color: var(--color-purple);
+  --caution-color: var(--color-red);
   --caution-on-color: var(--color-white);
-  --important-color: var(--color-red);
+  --important-color: var(--color-purple);
   --important-on-color: var(--color-white);
   --note-color: var(--color-blue);
   --note-on-color: var(--color-white);
