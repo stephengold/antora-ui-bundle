@@ -1,14 +1,14 @@
 /*! Adapted from the GitHub style by Vasily Polovnyov <vast@whiteants.net> */
 .hljs-comment,
 .hljs-quote {
-  color: var(--jme-highlight-comment-font-color);
+  color: var(--highlight-comment-font-color);
   font-style: italic;
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-subst {
-  color: var(--jme-highlight-keyword-font-color);
+  color: var(--highlight-keyword-font-color);
 }
 
 .hljs-number,
@@ -18,13 +18,13 @@
 .hljs-tag .hljs-attr,
 .hljs-string,
 .hljs-doctag {
-  color: var(--jme-highlight-literal-font-color);
+  color: var(--highlight-literal-font-color);
 }
 
 .hljs-title,
 .hljs-section,
 .hljs-selector-id {
-  color: var(--jme-highlight-new_method-font-color);
+  color: var(--highlight-new_method-font-color);
 }
 
 .hljs-subst {

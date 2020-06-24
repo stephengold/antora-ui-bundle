@@ -153,6 +153,7 @@
   --toc-heading-font-color: var(--doc-font-color);
   --toc-line-height: 1;
   /* admonitions */
+  --admonition-background: var(--jme-admonition-background);
   --caution-color: var(--color-red);
   --caution-on-color: var(--color-white);
   --important-color: var(--color-purple);
@@ -185,9 +186,13 @@
   --caption-font-color: var(--jme-caption-font-color);
   --caption-font-weight: var(--body-font-weight-bold);
   --code-background: var(--panel-background);
-  --code-font-color: var(--body-font-color);
+  --code-font-color: var(--jme-code-font-color);
   --example-background: var(--jme-example-background);
   --example-border-color: var(--color-gray-70);
+  --highlight-comment-font-color: var(--jme-highlight-comment-font-color);
+  --highlight-keyword-font-color: var(--jme-highlight-keyword-font-color);
+  --highlight-literal-font-color: var(--jme-highlight-literal-font-color);
+  --highlight-new_method-font-color: var(--jme-highlight-new_method-font-color);
   --kbd-background: var(--panel-background);
   --kbd-border-color: var(--color-gray-10);
   --pre-background: var(--panel-background);

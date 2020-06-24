@@ -323,7 +323,7 @@ html.is-clipped--nav {
 }
 
 input:checked + .slider {
-  background-color: var(--jme-link-font-color);
+  background-color: var(--link-font-color);
 }
 
 input:checked + .slider::before {
