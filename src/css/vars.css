@@ -7,7 +7,6 @@
   --color-jet-20: #4a4a4a;
   --color-jet-30: #424242;
   --color-jet-70: #222;
-  --color-black: #000;
   --color-amber: #d17104;
   --color-blue: #1565c0;
   --color-cyan: #008080;
@@ -57,7 +56,6 @@
   --color-jet-20: #4a4a4a;
   --color-jet-30: #424242;
   --color-jet-70: #222;
-  --color-black: #000;
   --color-amber: #d17104;
   --color-blue: #1565c0;
   --color-cyan: #008080;
@@ -122,7 +120,7 @@
   /* navbar */
   --navbar-background: var(--theme-navbar);
   --navbar-font-color: var(--theme-navbar-font-color);
-  --navbar_hover-background: var(--color-black);
+  --navbar_hover-background: var(--color-jet-70);
   --navbar-button-background: var(--color-smoke);
   --navbar-button-border-color: var(--panel-border-color);
   --navbar-button-font-color: var(--body-font-color);
