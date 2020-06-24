@@ -42,7 +42,7 @@
   --theme-admonition-background: var(--color-jet-20);
   --theme-toolbar-background: var(--color-jet-20);
   --theme-toolbar-font-color: var(--color-smoke);
-  --theme-toolbar-muted-color: var(--color-smoke);
+  --theme-toolbar-muted-color: var(--color-gray-30);
 }
 
 [data-theme="light"] {
