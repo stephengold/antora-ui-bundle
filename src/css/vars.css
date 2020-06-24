@@ -35,6 +35,7 @@
   --theme-link_hover-font-color: var(--color-amber);
   --theme-quote-border-color: var(--color-smoke);
   --theme-sidebar-background: var(--color-jet-20);
+  --theme-nav-background: var(--color-jet-20);
   --theme-nav-muted-color: var(--color-smoke);
   --theme-nav-secondary-background: var(--color-jet-30);
   --theme-page-version-menu-background: var(--color-jet-20);
@@ -82,6 +83,7 @@
   --theme-link_hover-font-color: var(--color-blue);
   --theme-quote-border-color: var(--color-gray-70);
   --theme-sidebar-background: var(--color-gray-10);
+  --theme-nav-background: var(--color-gray-10);
   --theme-nav-muted-color: var(--color-gray-70);
   --theme-nav-secondary-background: var(--color-smoke);
   --theme-page-version-menu-background: var(--color-gray-10);
@@ -126,7 +128,7 @@
   --navbar-menu_hover-background: var(--color-smoke);
   --navbar-slider-color: var(--color-gray-70);
   /* nav */
-  --nav-background: var(--panel-background);
+  --nav-background: var(--theme-nav-background);
   --nav-border-color: var(--color-gray-10);
   --nav-heading-font-color: var(--theme-nav-heading-font-color);
   --nav-line-height: 1;
