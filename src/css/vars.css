@@ -17,7 +17,6 @@
   --theme-body-font-color: var(--color-smoke);
   --theme-doc-font-color: var(--color-smoke);
   --theme-nav-heading-font-color: var(--color-smoke);
-  --theme-toolbar-font-color: var(--color-smoke);
   --theme-toc-font-color: var(--color-smoke);
   --theme-heading-font-color: var(--color-smoke);
   --theme-caption-font-color: var(--color-gray-10);
@@ -41,6 +40,8 @@
   --theme-page-version-menu-background: var(--color-jet-20);
   --theme-example-background: var(--color-jet-20);
   --theme-admonition-background: var(--color-jet-20);
+  --theme-toolbar-background: var(--color-jet-20);
+  --theme-toolbar-font-color: var(--color-smoke);
   --theme-toolbar-muted-color: var(--color-smoke);
 }
 
@@ -63,7 +64,6 @@
   --theme-body-font-color: var(--color-jet-70);
   --theme-doc-font-color: var(--color-jet-70);
   --theme-nav-heading-font-color: var(--color-jet-20);
-  --theme-toolbar-font-color: var(--color-gray-70);
   --theme-toc-font-color: var(--color-gray-70);
   --theme-heading-font-color: var(--color-gray-70);
   --theme-caption-font-color: var(--color-gray-70);
@@ -87,6 +87,8 @@
   --theme-page-version-menu-background: var(--color-gray-10);
   --theme-example-background: var(--color-gray-10);
   --theme-admonition-background: var(--color-gray-10);
+  --theme-toolbar-background: var(--color-gray-10);
+  --theme-toolbar-font-color: var(--color-gray-70);
   --theme-toolbar-muted-color: var(--color-gray-30);
 }
 
@@ -132,7 +134,7 @@
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--theme-nav-secondary-background);
   /* toolbar */
-  --toolbar-background: var(--panel-background);
+  --toolbar-background: var(--theme-toolbar-background);
   --toolbar-border-color: var(--panel-border-color);
   --toolbar-font-color: var(--theme-toolbar-font-color);
   --toolbar-muted-color: var(--theme-toolbar-muted-color);
