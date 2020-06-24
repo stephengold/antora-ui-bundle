@@ -1,6 +1,7 @@
 [data-theme="dark"] {
   --color-smoke: #e1e1e1;
   --color-gray-10: #d3d3d3;
+  --color-gray-20: #bbb;
   --color-gray-30: #8e8e8e;
   --color-gray-50: #808080;
   --color-gray-70: #5d5d5d;
@@ -36,7 +37,7 @@
   --theme-quote-border-color: var(--color-smoke);
   --theme-sidebar-background: var(--color-jet-20);
   --theme-nav-background: var(--color-jet-20);
-  --theme-nav-muted-color: var(--color-smoke);
+  --theme-nav-explore-background: var(--color-gray-70);
   --theme-nav-secondary-background: var(--color-jet-30);
   --theme-page-version-menu-background: var(--color-jet-20);
   --theme-example-background: var(--color-jet-20);
@@ -49,6 +50,7 @@
 [data-theme="light"] {
   --color-smoke: #e1e1e1;
   --color-gray-10: #d3d3d3;
+  --color-gray-20: #bbb;
   --color-gray-30: #8e8e8e;
   --color-gray-50: #808080;
   --color-gray-70: #5d5d5d;
@@ -84,8 +86,8 @@
   --theme-quote-border-color: var(--color-gray-70);
   --theme-sidebar-background: var(--color-gray-10);
   --theme-nav-background: var(--color-gray-10);
-  --theme-nav-muted-color: var(--color-gray-70);
-  --theme-nav-secondary-background: var(--color-smoke);
+  --theme-nav-explore-background: var(--color-gray-20);
+  --theme-nav-secondary-background: var(--color-gray-10);
   --theme-page-version-menu-background: var(--color-gray-10);
   --theme-example-background: var(--color-gray-10);
   --theme-admonition-background: var(--color-gray-10);
@@ -130,9 +132,9 @@
   /* nav */
   --nav-background: var(--theme-nav-background);
   --nav-border-color: var(--color-gray-10);
+  --nav-explore-background: var(--theme-nav-explore-background);
   --nav-heading-font-color: var(--theme-nav-heading-font-color);
   --nav-line-height: 1;
-  --nav-muted-color: var(--theme-nav-muted-color);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--theme-nav-secondary-background);
   /* toolbar */

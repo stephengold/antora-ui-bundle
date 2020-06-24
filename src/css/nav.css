@@ -29,7 +29,6 @@
 }
 
 .nav {
-  background: var(--nav-background);
   position: relative;
   top: var(--toolbar-height);
   height: var(--nav-height);
@@ -78,8 +77,8 @@ html.is-clipped--nav {
 }
 
 .nav-panel-menu:not(.is-active)::after {
+  background: var(--body-background);
   content: "";
-  background: rgba(0, 0, 0, 0.5);
   display: block;
   position: absolute;
   top: 0;
@@ -105,6 +104,7 @@ html.is-clipped--nav {
 }
 
 .nav-menu {
+  background: var(--nav-background);
   flex-grow: 1;
   min-height: 0;
   width: 100%;
@@ -176,7 +176,7 @@ html.is-clipped--nav {
 }
 
 .nav-panel-explore {
-  background: var(--nav-background);
+  background: var(--nav-explore-background);
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -189,7 +189,6 @@ html.is-clipped--nav {
 .nav-panel-explore .context {
   font-size: calc(15 / var(--rem-base) * 1rem);
   flex-shrink: 0;
-  color: var(--nav-muted-color);
   box-shadow: 0 -1px 0 var(--nav-panel-divider-color);
   padding: 0 0.25rem 0 0.5rem;
   display: flex;
