@@ -299,7 +299,7 @@ html.is-clipped--nav {
 }
 
 .slider {
-  background-color: var(--color-jet-30);
+  background-color: var(--navbar-slider-color);
   border-radius: 25px;
   bottom: 0;
   left: 0;
@@ -311,7 +311,7 @@ html.is-clipped--nav {
 }
 
 .slider::before {
-  background-color: var(--color-white);
+  background-color: var(--navbar-font-color);
   border-radius: 25px;
   bottom: 4px;
   content: "";

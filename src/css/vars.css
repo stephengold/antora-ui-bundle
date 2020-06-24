@@ -132,6 +132,7 @@
   --navbar-menu-background: var(--theme-navbar-menu-background);
   --navbar-menu-font-color: var(--body-font-color);
   --navbar-menu_hover-background: var(--color-white);
+  --navbar-slider-color: var(--color-gray-70);
   /* nav */
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
