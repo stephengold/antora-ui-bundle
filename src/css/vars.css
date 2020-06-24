@@ -39,9 +39,9 @@
   --theme-nav-muted-color: var(--color-smoke);
   --theme-nav-secondary-background: var(--color-jet-30);
   --theme-page-version-menu-background: var(--color-jet-20);
-  --theme-toolbar-muted-color: var(--color-smoke);
   --theme-example-background: var(--color-jet-20);
   --theme-admonition-background: var(--color-jet-20);
+  --theme-toolbar-muted-color: var(--color-smoke);
 }
 
 [data-theme="light"] {
@@ -71,7 +71,7 @@
   --theme-quote-attribution-font-color: var(--color-gray-30);
   --theme-footer-font-color: var(--color-gray-70);
   --theme-footer-link-font-color: var(--color-jet-70);
-  --theme-footer-background: var(--color-smoke);
+  --theme-footer-background: var(--color-gray-10);
   --theme-panel-background: var(--color-smoke);
   --theme-code-font-color: var(--color-green);
   --theme-highlight-comment-font-color: var(--color-gray-30);
@@ -81,13 +81,13 @@
   --theme-link-font-color: var(--color-blue);
   --theme-link_hover-font-color: var(--color-blue);
   --theme-quote-border-color: var(--color-gray-70);
-  --theme-sidebar-background: var(--color-smoke);
+  --theme-sidebar-background: var(--color-gray-10);
   --theme-nav-muted-color: var(--color-gray-70);
   --theme-nav-secondary-background: var(--color-smoke);
-  --theme-page-version-menu-background: var(--color-smoke);
+  --theme-page-version-menu-background: var(--color-gray-10);
+  --theme-example-background: var(--color-gray-10);
+  --theme-admonition-background: var(--color-gray-10);
   --theme-toolbar-muted-color: var(--color-gray-30);
-  --theme-example-background: var(--color-smoke);
-  --theme-admonition-background: var(--color-smoke);
 }
 
 :root {
