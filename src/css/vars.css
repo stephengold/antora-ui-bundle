@@ -128,8 +128,8 @@
   /* nav */
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
-  --nav-line-height: 1.35;
   --nav-heading-font-color: var(--theme-nav-heading-font-color);
+  --nav-line-height: 1;
   --nav-muted-color: var(--theme-nav-muted-color);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--theme-nav-secondary-background);
