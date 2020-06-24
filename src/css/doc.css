@@ -241,7 +241,7 @@
 
 .doc .admonitionblock td.content {
   background: var(--admonition-background);
-  padding: 0.8rem 0.4rem 0.4rem 0.4rem;
+  padding: 0.8rem 1rem 0.4rem 1rem;
   width: 100%;
 }
 
