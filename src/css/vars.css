@@ -1,5 +1,4 @@
 [data-theme="dark"] {
-  --color-white: #fff;
   --color-smoke: #e1e1e1;
   --color-gray-10: #c1c1c1;
   --color-gray-30: #8e8e8e;
@@ -19,11 +18,11 @@
   --theme-body-font-color: var(--color-smoke);
   --theme-doc-font-color: var(--color-smoke);
   --theme-navbar: var(--color-jet-70);
-  --theme-navbar-font-color: var(--color-white);
+  --theme-navbar-font-color: var(--color-smoke);
   --theme-nav-heading-font-color: var(--color-smoke);
-  --theme-toolbar-font-color: var(--color-white);
+  --theme-toolbar-font-color: var(--color-smoke);
   --theme-toc-font-color: var(--color-smoke);
-  --theme-heading-font-color: var(--color-white);
+  --theme-heading-font-color: var(--color-smoke);
   --theme-caption-font-color: var(--color-gray-10);
   --theme-quote-font-color: var(--color-smoke);
   --theme-quote-attribution-font-color: var(--color-gray-10);
@@ -38,19 +37,18 @@
   --theme-highlight-new_method-font-color: var(--color-red);
   --theme-link-font-color: var(--color-amber);
   --theme-link_hover-font-color: var(--color-amber);
-  --theme-quote-border-color: var(--color-white);
+  --theme-quote-border-color: var(--color-smoke);
   --theme-sidebar-background: var(--color-jet-20);
   --theme-nav-muted-color: var(--color-smoke);
   --theme-nav-secondary-background: var(--color-jet-30);
   --theme-page-version-menu-background: var(--color-jet-20);
-  --theme-toolbar-muted-color: var(--color-white);
+  --theme-toolbar-muted-color: var(--color-smoke);
   --theme-example-background: var(--color-jet-20);
   --theme-admonition-background: var(--color-jet-20);
   --theme-navbar-menu-background: var(--color-jet-20);
 }
 
 [data-theme="light"] {
-  --color-white: #fff;
   --color-smoke: #e1e1e1;
   --color-gray-10: #c1c1c1;
   --color-gray-30: #8e8e8e;
@@ -66,11 +64,11 @@
   --color-green: #218f26;
   --color-red: #f22;
   --color-purple: #a0439c;
-  --theme-background: var(--color-white);
+  --theme-background: var(--color-smoke);
   --theme-body-font-color: var(--color-jet-70);
   --theme-doc-font-color: var(--color-jet-70);
   --theme-navbar: var(--color-jet-70);
-  --theme-navbar-font-color: var(--color-white);
+  --theme-navbar-font-color: var(--color-smoke);
   --theme-nav-heading-font-color: var(--color-jet-20);
   --theme-toolbar-font-color: var(--color-gray-70);
   --theme-toc-font-color: var(--color-gray-70);
@@ -81,7 +79,7 @@
   --theme-footer-font-color: var(--color-gray-70);
   --theme-footer-link-font-color: var(--color-jet-70);
   --theme-footer-background: var(--color-smoke);
-  --theme-panel-background: var(--color-white);
+  --theme-panel-background: var(--color-smoke);
   --theme-code-font-color: var(--color-green);
   --theme-highlight-comment-font-color: var(--color-gray-30);
   --theme-highlight-keyword-font-color: var(--color-amber);
@@ -95,9 +93,9 @@
   --theme-nav-secondary-background: var(--color-smoke);
   --theme-page-version-menu-background: var(--color-smoke);
   --theme-toolbar-muted-color: var(--color-gray-30);
-  --theme-example-background: var(--color-white);
+  --theme-example-background: var(--color-smoke);
   --theme-admonition-background: var(--color-smoke);
-  --theme-navbar-menu-background: var(--color-white);
+  --theme-navbar-menu-background: var(--color-smoke);
 }
 
 :root {
@@ -125,13 +123,13 @@
   --navbar-background: var(--theme-navbar);
   --navbar-font-color: var(--theme-navbar-font-color);
   --navbar_hover-background: var(--color-black);
-  --navbar-button-background: var(--color-white);
+  --navbar-button-background: var(--color-smoke);
   --navbar-button-border-color: var(--panel-border-color);
   --navbar-button-font-color: var(--body-font-color);
   --navbar-menu-border-color: var(--panel-border-color);
   --navbar-menu-background: var(--theme-navbar-menu-background);
   --navbar-menu-font-color: var(--body-font-color);
-  --navbar-menu_hover-background: var(--color-white);
+  --navbar-menu_hover-background: var(--color-smoke);
   --navbar-slider-color: var(--color-gray-70);
   /* nav */
   --nav-background: var(--panel-background);
@@ -156,15 +154,15 @@
   /* admonitions */
   --admonition-background: var(--theme-admonition-background);
   --caution-color: var(--color-red);
-  --caution-on-color: var(--color-white);
+  --caution-on-color: var(--color-smoke);
   --important-color: var(--color-purple);
-  --important-on-color: var(--color-white);
+  --important-on-color: var(--color-smoke);
   --note-color: var(--color-blue);
-  --note-on-color: var(--color-white);
+  --note-on-color: var(--color-smoke);
   --tip-color: var(--color-green);
-  --tip-on-color: var(--color-white);
+  --tip-on-color: var(--color-smoke);
   --warning-color: var(--color-amber);
-  --warning-on-color: var(--color-white);
+  --warning-on-color: var(--color-smoke);
   /* doc */
   --doc-font-color: var(--theme-doc-font-color);
   --doc-font-size: inherit;
