@@ -42,7 +42,7 @@
   --theme-page-version-menu-background: var(--color-jet-20);
   --theme-example-background: var(--color-jet-20);
   --theme-admonition-background: var(--color-jet-20);
-  --theme-toolbar-background: var(--color-jet-20);
+  --theme-toolbar-background: var(--color-gray-70);
   --theme-toolbar-font-color: var(--color-smoke);
   --theme-toolbar-muted-color: var(--color-gray-30);
 }
@@ -91,7 +91,7 @@
   --theme-page-version-menu-background: var(--color-gray-10);
   --theme-example-background: var(--color-gray-10);
   --theme-admonition-background: var(--color-gray-10);
-  --theme-toolbar-background: var(--color-gray-10);
+  --theme-toolbar-background: var(--color-gray-20);
   --theme-toolbar-font-color: var(--color-gray-70);
   --theme-toolbar-muted-color: var(--color-gray-30);
 }
