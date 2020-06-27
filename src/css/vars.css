@@ -98,6 +98,58 @@
   --theme-toolbar-muted-color: var(--color-gray-30);
 }
 
+[data-theme="pastel"] {
+  --color-smoke: #e1e1e1;
+  --color-gray-10: #d3d3d3;
+  --color-gray-30: #8e8e8e;
+  --color-gray-50: #808080;
+  --color-gray-70: #5d5d5d;
+  --color-jet-20: #4a4a4a;
+  --color-jet-70: #222;
+  --color-amber: #d17104;
+  --color-blue: #1565c0;
+  --color-cyan: #008080;
+  --color-green-40: #218f26;
+  --color-green-60: #050;
+  --color-red: #f22;
+  --color-purple: #a0439c;
+  --color-lavender: #edd9ff;
+  --color-peach: #fdc;
+  --color-rose: #ffc9f0;
+  --theme-background: var(--color-lavender);
+  --theme-body-font-color: var(--color-jet-70);
+  --theme-code-font-color: var(--color-green-60);
+  --theme-doc-font-color: var(--color-jet-70);
+  --theme-nav-heading-font-color: var(--color-jet-20);
+  --theme-toc-font-color: var(--color-gray-70);
+  --theme-heading-font-color: var(--color-gray-70);
+  --theme-caption-font-color: var(--color-gray-70);
+  --theme-quote-font-color: var(--color-gray-70);
+  --theme-quote-attribution-font-color: var(--color-gray-70);
+  --theme-footer-font-color: var(--color-gray-70);
+  --theme-footer-link-font-color: var(--color-jet-70);
+  --theme-footer-background: var(--color-peach);
+  --theme-panel-background: var(--color-lavender);
+  --theme-highlight-comment-font-color: var(--color-gray-30);
+  --theme-highlight-keyword-font-color: var(--color-amber);
+  --theme-highlight-literal-font-color: var(--color-cyan);
+  --theme-highlight-new_method-font-color: var(--color-red);
+  --theme-link-font-color: var(--color-blue);
+  --theme-link_hover-font-color: var(--color-blue);
+  --theme-quote-border-color: var(--color-gray-70);
+  --theme-sidebar-background: var(--color-peach);
+  --theme-nav-background: var(--color-peach);
+  --theme-nav-explore-background: var(--color-rose);
+  --theme-nav-secondary-background: var(--color-peach);
+  --theme-page-version-menu-background: var(--color-peach);
+  --theme-example-background: var(--color-peach);
+  --theme-admonition-background: var(--color-peach);
+  --theme-scrollbar-thumb-color: var(--color-blue);
+  --theme-toolbar-background: var(--color-rose);
+  --theme-toolbar-font-color: var(--color-gray-70);
+  --theme-toolbar-muted-color: var(--color-gray-30);
+}
+
 :root {
   /* fonts */
   --rem-base: 18;
