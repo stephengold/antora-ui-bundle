@@ -128,11 +128,11 @@
   --navbar-font-color: var(--color-smoke);
   --navbar_hover-background: var(--color-jet-70);
   --navbar-button-background: var(--color-smoke);
-  --navbar-button-border-color: var(--panel-border-color);
-  --navbar-button-font-color: var(--body-font-color);
-  --navbar-menu-border-color: var(--panel-border-color);
-  --navbar-menu-background: var(--color-gray-50);
-  --navbar-menu-font-color: var(--body-font-color);
+  --navbar-button-border-color: var(--color-gray-30);
+  --navbar-button-font-color: var(--color-jet-70);
+  --navbar-menu-border-color: var(--color-jet-70);
+  --navbar-menu-background: var(--color-gray-30);
+  --navbar-menu-font-color: var(--color-jet-70);
   --navbar-menu_hover-background: var(--color-smoke);
   --navbar-slider-color: var(--color-gray-70);
   /* nav */
