@@ -1,12 +1,12 @@
 var currentTheme = window.localStorage.getItem('theme')
 if (currentTheme) {
-  document.documentElement.setAttribute('data-theme', currentTheme)
+  setTheme(currentTheme)
 } else {
   //set dark by default
-  document.documentElement.setAttribute('data-theme', 'dark')
+  setTheme('dark')
 }
 
-function setTheme(x) {
-    document.documentElement.setAttribute('data-theme', x)
-    window.localStorage.setItem('theme', x)
+function setTheme (x) {
+  document.documentElement.setAttribute('data-theme', x)
+  window.localStorage.setItem('theme', x)
 }
