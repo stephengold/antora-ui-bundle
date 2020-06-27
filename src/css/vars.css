@@ -18,7 +18,6 @@
   --theme-body-font-color: var(--color-smoke);
   --theme-code-font-color: var(--color-green-20);
   --theme-doc-font-color: var(--color-smoke);
-  --theme-nav-heading-font-color: var(--color-smoke);
   --theme-toc-font-color: var(--color-smoke);
   --theme-heading-font-color: var(--color-smoke);
   --theme-caption-font-color: var(--color-gray-10);
@@ -38,6 +37,7 @@
   --theme-sidebar-background: var(--color-jet-20);
   --theme-nav-background: var(--color-jet-20);
   --theme-nav-explore-background: var(--color-gray-70);
+  --theme-nav-heading-font-color: var(--color-smoke);
   --theme-nav-secondary-background: var(--color-jet-20);
   --theme-page-version-menu-background: var(--color-jet-20);
   --theme-example-background: var(--color-jet-20);
@@ -68,7 +68,6 @@
   --theme-body-font-color: var(--color-jet-70);
   --theme-code-font-color: var(--color-green-60);
   --theme-doc-font-color: var(--color-jet-70);
-  --theme-nav-heading-font-color: var(--color-jet-20);
   --theme-toc-font-color: var(--color-gray-70);
   --theme-heading-font-color: var(--color-gray-70);
   --theme-caption-font-color: var(--color-gray-70);
@@ -88,6 +87,7 @@
   --theme-sidebar-background: var(--color-gray-10);
   --theme-nav-background: var(--color-gray-10);
   --theme-nav-explore-background: var(--color-gray-20);
+  --theme-nav-heading-font-color: var(--color-jet-20);
   --theme-nav-secondary-background: var(--color-gray-10);
   --theme-page-version-menu-background: var(--color-gray-10);
   --theme-example-background: var(--color-gray-10);
@@ -119,7 +119,6 @@
   --theme-body-font-color: var(--color-jet-70);
   --theme-code-font-color: var(--color-green-60);
   --theme-doc-font-color: var(--color-jet-70);
-  --theme-nav-heading-font-color: var(--color-jet-20);
   --theme-toc-font-color: var(--color-gray-70);
   --theme-heading-font-color: var(--color-gray-70);
   --theme-caption-font-color: var(--color-gray-70);
@@ -139,6 +138,7 @@
   --theme-sidebar-background: var(--color-peach);
   --theme-nav-background: var(--color-peach);
   --theme-nav-explore-background: var(--color-rose);
+  --theme-nav-heading-font-color: var(--color-jet-20);
   --theme-nav-secondary-background: var(--color-peach);
   --theme-page-version-menu-background: var(--color-peach);
   --theme-example-background: var(--color-peach);
