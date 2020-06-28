@@ -27,7 +27,7 @@
   --theme-footer-font-color: var(--color-smoke);
   --theme-footer-link-font-color: var(--color-jet-90);
   --theme-footer-background: var(--color-brown);
-  --theme-heading-font-color: var(--color-smoke);
+  --theme-heading-font-color: var(--color-green-20);
   --theme-highlight-comment-font-color: var(--color-gray-30);
   --theme-highlight-keyword-font-color: var(--color-amber);
   --theme-highlight-literal-font-color: var(--color-cyan);
@@ -36,7 +36,7 @@
   --theme-link_hover-font-color: var(--color-red);
   --theme-nav-background: var(--color-green-60);
   --theme-nav-explore-background: var(--color-green-80);
-  --theme-nav-heading-font-color: var(--color-smoke);
+  --theme-nav-heading-font-color: var(--color-green-20);
   --theme-nav-secondary-background: var(--color-green-60);
   --theme-page-version-menu-background: var(--color-brown);
   --theme-panel-background: var(--color-jet-30);
@@ -45,7 +45,7 @@
   --theme-quote-border-color: var(--color-green-20);
   --theme-quote-font-color: var(--color-smoke);
   --theme-scrollbar-thumb-color: var(--color-red);
-  --theme-section-divider-color: var(--color-green-40);
+  --theme-section-divider-color: var(--color-green-20);
   --theme-sidebar-background: var(--color-brown);
   --theme-toc-font-color: var(--color-smoke);
   --theme-toolbar-background: var(--color-green-80);
