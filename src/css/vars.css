@@ -200,6 +200,7 @@
   --page-version-missing-font-color: var(--color-gray-30);
   /* toc */
   --toc-background: var(--theme-sidebar-background);
+  --toc-border-color: var(--theme-link-font-color);
   --toc-font-color: var(--theme-toc-font-color);
   --toc-heading-font-color: var(--doc-font-color);
   --toc-line-height: 1;

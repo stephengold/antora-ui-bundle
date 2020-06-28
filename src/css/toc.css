@@ -67,7 +67,7 @@
 
 .toc .toc-menu a {
   color: inherit;
-  border-left: 2px solid var(--toc-background);
+  border-left: 4px solid var(--toc-background);
   display: inline-block;
   padding: 0.3rem 0 0 0.5rem;
   text-decoration: none;
@@ -83,7 +83,7 @@
 }
 
 .toc .toc-menu a.is-active {
-  border-left-color: var(--link-font-color);
+  border-left-color: var(--toc-border-color);
   color: var(--doc-font-color);
 }
 
