@@ -201,8 +201,9 @@
   --toc-font-color: var(--theme-toc-font-color);
   --toc-heading-font-color: var(--doc-font-color);
   --toc-line-height: 1;
-  /* admonitions */
+  /* admonitions -- only the background is themed! */
   --admonition-background: var(--theme-admonition-background);
+  --admonition-label-font-weight: var(--body-font-weight-bold);
   --caution-color: var(--color-red);
   --caution-on-color: var(--color-smoke);
   --important-color: var(--color-purple);
@@ -230,8 +231,6 @@
   --abstract-background: var(--color-smoke);
   --abstract-font-color: var(--color-jet-20);
   --abstract-border-color: var(--panel-border-color);
-  --admonition-background: var(--theme-admonition-background);
-  --admonition-label-font-weight: var(--body-font-weight-bold);
   --caption-font-color: var(--theme-caption-font-color);
   --caption-font-weight: var(--body-font-weight-bold);
   --code-background: var(--panel-background);
