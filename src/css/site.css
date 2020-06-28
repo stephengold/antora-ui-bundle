@@ -1,5 +1,8 @@
 @import "typeface-roboto.css";
 @import "typeface-roboto-mono.css";
+@import "theme-dark.css";
+@import "theme-light.css";
+@import "theme-pastel.css";
 @import "vars.css";
 @import "base.css";
 @import "body.css";
