@@ -101,7 +101,6 @@
   --quote-font-color: var(--theme-quote-font-color);
   --quote-attribution-font-color: var(--theme-quote-attribution-font-color);
   --sidebar-background: var(--theme-sidebar-background);
-  --table-border-color: var(--panel-border-color);
   /* footer */
   --footer-line-height: var(--doc-line-height);
   --footer-background: var(--theme-footer-background);
