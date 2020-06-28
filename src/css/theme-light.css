@@ -42,6 +42,7 @@
   --theme-quote-border-color: var(--color-gray-30);
   --theme-quote-font-color: var(--color-gray-70);
   --theme-scrollbar-thumb-color: var(--color-blue);
+  --theme-section-divider-color: var(--color-gray-30);
   --theme-sidebar-background: var(--color-gray-10);
   --theme-toc-font-color: var(--color-gray-70);
   --theme-toolbar-background: var(--color-gray-20);

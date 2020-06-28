@@ -43,6 +43,7 @@
   --theme-quote-font-color: var(--color-smoke);
   --theme-scrollbar-thumb-color: var(--color-amber);
   --theme-sidebar-background: var(--color-jet-20);
+  --theme-section-divider-color: var(--color-gray-30);
   --theme-toc-font-color: var(--color-smoke);
   --theme-toolbar-background: var(--color-gray-70);
   --theme-toolbar-font-color: var(--color-smoke);
