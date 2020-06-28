@@ -38,6 +38,7 @@
   --theme-page-version-menu-background: var(--color-jet-20);
   --theme-panel-background: var(--color-jet-30);
   --theme-quote-attribution-font-color: var(--color-gray-10);
+  --theme-quote-background: var(--color-jet-30);
   --theme-quote-border-color: var(--color-smoke);
   --theme-quote-font-color: var(--color-smoke);
   --theme-example-background: var(--color-jet-20);
@@ -88,6 +89,7 @@
   --theme-page-version-menu-background: var(--color-gray-10);
   --theme-panel-background: var(--color-smoke);
   --theme-quote-attribution-font-color: var(--color-gray-30);
+  --theme-quote-background: var(--color-smoke);
   --theme-quote-border-color: var(--color-gray-70);
   --theme-quote-font-color: var(--color-gray-70);
   --theme-example-background: var(--color-gray-10);
@@ -141,6 +143,7 @@
   --theme-page-version-menu-background: var(--color-peach);
   --theme-panel-background: var(--color-smoke);
   --theme-quote-attribution-font-color: var(--color-gray-70);
+  --theme-quote-background: var(--color-peach);
   --theme-quote-font-color: var(--color-gray-70);
   --theme-quote-border-color: var(--color-gray-70);
   --theme-example-background: var(--color-lime);
@@ -249,7 +252,7 @@
   --pre-background: var(--panel-background);
   --pre-border-color: var(--color-gray-30);
   --pre-annotation-font-color: var(--color-gray-30);
-  --quote-background: var(--panel-background);
+  --quote-background: var(--theme-quote-background);
   --quote-border-color: var(--color-gray-30);
   --quote-font-color: var(--theme-quote-font-color);
   --quote-attribution-font-color: var(--theme-quote-attribution-font-color);
