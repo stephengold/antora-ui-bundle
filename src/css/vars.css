@@ -17,7 +17,7 @@
   /* base */
   --body-background: var(--theme-background);
   --panel-background: var(--theme-panel-background);
-  --panel-border-color: var(--color-gray-50);
+  --panel-border-color: var(--color-gray-30);
   --scrollbar-thumb-color: var(--theme-scrollbar-thumb-color);
   /* navbar -- not themed! */
   --navbar-background: var(--color-jet-70);
