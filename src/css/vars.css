@@ -48,6 +48,8 @@
   --toc-background: var(--theme-sidebar-background);
   --toc-border-color: var(--theme-link-font-color);
   --toc-font-color: var(--theme-toc-font-color);
+  --toc-font-size: calc(15 / var(--rem-base) * 1rem);
+  --toc-font-size--desktop: calc(17 / var(--rem-base) * 1rem);
   --toc-heading-font-color: var(--theme-heading-font-color);
   --toc-line-height: 1;
   /* admonitions */
