@@ -40,7 +40,6 @@
   --nav-secondary-background: var(--theme-nav-secondary-background);
   /* toolbar */
   --toolbar-background: var(--theme-toolbar-background);
-  --toolbar-border-color: var(--panel-border-color);
   --toolbar-font-color: var(--theme-toolbar-font-color);
   --toolbar-muted-color: var(--theme-toolbar-muted-color);
   --page-version-menu-background: var(--theme-page-version-menu-background);
