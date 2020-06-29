@@ -17,9 +17,11 @@
   --color-peach: #fdc;
   --color-rose: #ffc9f0;
   --theme-admonition-background: var(--color-lime);
+  --theme-admonition-on-color: var(--color-smoke);
   --theme-background: var(--color-lavender);
   --theme-body-font-color: var(--color-jet-70);
   --theme-caption-font-color: var(--color-gray-70);
+  --theme-caution-color: var(--color-red);
   --theme-code-font-color: var(--color-jet-70);
   --theme-doc-font-color: var(--color-jet-70);
   --theme-example-background: var(--color-lime);
@@ -31,15 +33,17 @@
   --theme-highlight-keyword-font-color: var(--color-amber);
   --theme-highlight-literal-font-color: var(--color-cyan);
   --theme-highlight-new_method-font-color: var(--color-red);
+  --theme-important-color: var(--color-purple);
   --theme-link-font-color: var(--color-blue);
   --theme-link_hover-font-color: var(--color-blue);
   --theme-nav-background: var(--color-peach);
   --theme-nav-explore-background: var(--color-rose);
   --theme-nav-heading-font-color: var(--color-jet-20);
   --theme-nav-secondary-background: var(--color-peach);
+  --theme-note-color: var(--color-blue);
   --theme-page-version-menu-background: var(--color-peach);
   --theme-panel-background: var(--color-smoke);
-   --theme-pre-border-color: var(--color-gray-30);
+  --theme-pre-border-color: var(--color-gray-30);
   --theme-quote-attribution-font-color: var(--color-gray-70);
   --theme-quote-background: var(--color-peach);
   --theme-quote-border-color: var(--color-rose);
@@ -47,8 +51,10 @@
   --theme-scrollbar-thumb-color: var(--color-blue);
   --theme-section-divider-color: var(--color-gray-30);
   --theme-sidebar-background: var(--color-ice);
+  --theme-tip-color: var(--color-green-40);
   --theme-toc-font-color: var(--color-gray-70);
   --theme-toolbar-background: var(--color-rose);
   --theme-toolbar-font-color: var(--color-gray-70);
   --theme-toolbar-muted-color: var(--color-gray-30);
+  --theme-warning-color: var(--color-amber);
 }

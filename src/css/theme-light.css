@@ -14,9 +14,11 @@
   --color-red: #f22;
   --color-purple: #a0439c;
   --theme-admonition-background: var(--color-gray-10);
+  --theme-admonition-on-color: var(--color-smoke);
   --theme-background: var(--color-smoke);
   --theme-body-font-color: var(--color-jet-70);
   --theme-caption-font-color: var(--color-gray-70);
+  --theme-caution-color: var(--color-red);
   --theme-code-font-color: var(--color-green-60);
   --theme-doc-font-color: var(--color-jet-70);
   --theme-example-background: var(--color-gray-10);
@@ -28,12 +30,14 @@
   --theme-highlight-keyword-font-color: var(--color-amber);
   --theme-highlight-literal-font-color: var(--color-cyan);
   --theme-highlight-new_method-font-color: var(--color-red);
+  --theme-important-color: var(--color-purple);
   --theme-link-font-color: var(--color-blue);
   --theme-link_hover-font-color: var(--color-blue);
   --theme-nav-background: var(--color-gray-10);
   --theme-nav-explore-background: var(--color-gray-20);
   --theme-nav-heading-font-color: var(--color-jet-20);
   --theme-nav-secondary-background: var(--color-gray-10);
+  --theme-note-color: var(--color-blue);
   --theme-page-version-menu-background: var(--color-gray-10);
   --theme-panel-background: var(--color-smoke);
   --theme-pre-border-color: var(--color-gray-30);
@@ -44,8 +48,10 @@
   --theme-scrollbar-thumb-color: var(--color-blue);
   --theme-section-divider-color: var(--color-gray-30);
   --theme-sidebar-background: var(--color-gray-10);
+  --theme-tip-color: var(--color-green-40);
   --theme-toc-font-color: var(--color-gray-70);
   --theme-toolbar-background: var(--color-gray-20);
   --theme-toolbar-font-color: var(--color-gray-70);
   --theme-toolbar-muted-color: var(--color-gray-30);
+  --theme-warning-color: var(--color-amber);
 }

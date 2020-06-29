@@ -51,19 +51,19 @@
   --toc-font-color: var(--theme-toc-font-color);
   --toc-heading-font-color: var(--doc-font-color);
   --toc-line-height: 1;
-  /* admonitions -- only the background is themed! */
+  /* admonitions */
   --admonition-background: var(--theme-admonition-background);
   --admonition-label-font-weight: var(--body-font-weight-bold);
-  --caution-color: var(--color-red);
-  --caution-on-color: var(--color-smoke);
-  --important-color: var(--color-purple);
-  --important-on-color: var(--color-smoke);
-  --note-color: var(--color-blue);
-  --note-on-color: var(--color-smoke);
-  --tip-color: var(--color-green-40);
-  --tip-on-color: var(--color-smoke);
-  --warning-color: var(--color-amber);
-  --warning-on-color: var(--color-smoke);
+  --caution-color: var(--theme-caution-color);
+  --caution-on-color: var(--theme-admonition-on-color);
+  --important-color: var(--theme-important-color);
+  --important-on-color: var(--theme-admonition-on-color);
+  --note-color: var(--theme-note-color);
+  --note-on-color: var(--theme-admonition-on-color);
+  --tip-color: var(--theme-tip-color);
+  --tip-on-color: var(--theme-admonition-on-color);
+  --warning-color: var(--theme-warning-color);
+  --warning-on-color: var(--theme-admonition-on-color);
   /* doc */
   --doc-font-color: var(--theme-doc-font-color);
   --doc-font-size: inherit;
