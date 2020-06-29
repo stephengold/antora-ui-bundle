@@ -78,9 +78,6 @@
   --link-font-color: var(--theme-link-font-color);
   --link_hover-font-color: var(--theme-link_hover-font-color);
   --link_unresolved-font-color: var(--important-color);
-  --abstract-background: var(--color-smoke);
-  --abstract-font-color: var(--color-jet-20);
-  --abstract-border-color: var(--panel-border-color);
   --caption-font-color: var(--theme-caption-font-color);
   --caption-font-weight: var(--body-font-weight-bold);
   --code-background: var(--panel-background);

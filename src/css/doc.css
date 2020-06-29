@@ -47,13 +47,6 @@
   margin-top: 2rem;
 }
 
-.doc h1.sect0 {
-  background: var(--abstract-background);
-  font-size: 1.8em;
-  margin: 1.5rem -1rem 0;
-  padding: 0.5rem 1rem;
-}
-
 .doc h2:not(.discrete) {
   border-top: 1px solid var(--section-divider-color);
   margin-left: -1rem;
@@ -308,14 +301,6 @@
 .doc .image > img {
   height: auto;
   max-width: 100%;
-}
-
-#preamble .abstract blockquote {
-  background: var(--abstract-background);
-  border-left: 5px solid var(--abstract-border-color);
-  color: var(--abstract-font-color);
-  font-size: calc(16 / var(--rem-base) * 1rem);
-  padding: 0.75em 1em;
 }
 
 .doc .quoteblock {
