@@ -29,6 +29,7 @@
 }
 
 .nav {
+  background: var(--nav-background);
   position: relative;
   top: var(--toolbar-height);
   height: var(--nav-height);
@@ -60,7 +61,6 @@ html.is-clipped--nav {
 }
 
 .nav-panel-menu {
-  background: var(--nav-background);
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
