@@ -60,7 +60,7 @@
 }
 
 .hljs-meta {
-  color: #999;
+  color: var(--highlight-keyword-font-color);
   font-weight: var(--monospace-font-weight-bold);
 }
 
