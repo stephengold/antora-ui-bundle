@@ -41,6 +41,7 @@
   --theme-nav-secondary-background: var(--color-green-60);
   --theme-note-color: var(--color-blue);
   --theme-page-version-menu-background: var(--color-brown);
+  --theme-page-version-missing-font-color: var(--color-gray-30);
   --theme-panel-background: var(--color-jet-50);
   --theme-pre-border-color: var(--color-green-80);
   --theme-quote-attribution-font-color: var(--color-gray-10);

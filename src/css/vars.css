@@ -44,7 +44,7 @@
   --toolbar-font-color: var(--theme-toolbar-font-color);
   --toolbar-muted-color: var(--theme-toolbar-muted-color);
   --page-version-menu-background: var(--theme-page-version-menu-background);
-  --page-version-missing-font-color: var(--color-gray-30);
+  --page-version-missing-font-color: var(--theme-page-version-missing-font-color);
   /* toc */
   --toc-background: var(--theme-sidebar-background);
   --toc-border-color: var(--theme-link-font-color);
