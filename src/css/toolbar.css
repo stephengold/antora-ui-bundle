@@ -2,6 +2,7 @@
   color: var(--toolbar-font-color);
   align-items: center;
   background-color: var(--toolbar-background);
+  border-radius: 0.8rem;
   display: flex;
   font-size: calc(15 / var(--rem-base) * 1rem);
   height: var(--toolbar-height);
