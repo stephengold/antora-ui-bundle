@@ -95,7 +95,7 @@
   --kbd-border-color: var(--color-gray-30);
   --pre-background: var(--panel-background);
   --pre-border-color: var(--theme-pre-border-color);
-  --pre-annotation-font-color: var(--color-gray-30);
+  --pre-annotation-font-color: var(--theme-highlight-comment-font-color);
   --quote-background: var(--theme-quote-background);
   --quote-border-color: var(--theme-quote-border-color);
   --quote-font-color: var(--theme-quote-font-color);
