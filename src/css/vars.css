@@ -92,7 +92,7 @@
   --highlight-literal-font-color: var(--theme-highlight-literal-font-color);
   --highlight-new_method-font-color: var(--theme-highlight-new_method-font-color);
   --kbd-background: var(--panel-background);
-  --kbd-border-color: var(--color-gray-30);
+  --kbd-border-color: var(--theme-doc-font-color);
   --pre-background: var(--panel-background);
   --pre-border-color: var(--theme-pre-border-color);
   --pre-annotation-font-color: var(--theme-highlight-comment-font-color);
