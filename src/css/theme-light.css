@@ -36,6 +36,7 @@
   --theme-nav-secondary-background: var(--color-gray-10);
   --theme-page-version-menu-background: var(--color-gray-10);
   --theme-panel-background: var(--color-smoke);
+  --theme-pre-border-color: var(--color-gray-30);
   --theme-quote-attribution-font-color: var(--color-gray-30);
   --theme-quote-background: var(--color-smoke);
   --theme-quote-border-color: var(--color-gray-30);
