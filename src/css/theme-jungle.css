@@ -6,11 +6,11 @@
   --color-jet-50: #303030;
   --color-jet-70: #222;
   --color-amber: #d17104;
-  --color-blue: #1565c0;
-  --color-cyan: #008080;
+  --color-denim: #1565c0;
   --color-green-20: #df8;
   --color-red: #f22;
   --color-purple: #a0439c;
+  --color-teal: #008080;
   --color-brown: #431;
   --color-green-60: #050;
   --color-green-80: #241;
@@ -29,7 +29,7 @@
   --theme-heading-font-color: var(--color-green-20);
   --theme-highlight-comment-font-color: var(--color-gray-30);
   --theme-highlight-keyword-font-color: var(--color-amber);
-  --theme-highlight-literal-font-color: var(--color-cyan);
+  --theme-highlight-literal-font-color: var(--color-teal);
   --theme-highlight-new_method-font-color: var(--color-red);
   --theme-important-color: var(--color-purple);
   --theme-link-font-color: var(--color-red);
@@ -38,7 +38,7 @@
   --theme-nav-explore-background: var(--color-green-80);
   --theme-nav-heading-font-color: var(--color-green-20);
   --theme-nav-secondary-background: var(--color-green-60);
-  --theme-note-color: var(--color-blue);
+  --theme-note-color: var(--color-denim);
   --theme-page-version-menu-background: var(--color-brown);
   --theme-page-version-missing-font-color: var(--color-gray-30);
   --theme-panel-background: var(--color-jet-50);

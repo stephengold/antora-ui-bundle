@@ -7,12 +7,12 @@
   --color-jet-30: #424242;
   --color-jet-70: #222;
   --color-amber: #d17104;
-  --color-blue: #1565c0;
-  --color-cyan: #008080;
+  --color-denim: #1565c0;
   --color-green-20: #df8;
   --color-green-40: #218f26;
   --color-red: #f22;
   --color-purple: #a0439c;
+  --color-teal: #008080;
   --theme-admonition-background: var(--color-jet-20);
   --theme-admonition-on-color: var(--color-smoke);
   --theme-background: var(--color-jet-30);
@@ -28,7 +28,7 @@
   --theme-heading-font-color: var(--color-smoke);
   --theme-highlight-comment-font-color: var(--color-gray-30);
   --theme-highlight-keyword-font-color: var(--color-amber);
-  --theme-highlight-literal-font-color: var(--color-cyan);
+  --theme-highlight-literal-font-color: var(--color-teal);
   --theme-highlight-new_method-font-color: var(--color-red);
   --theme-important-color: var(--color-purple);
   --theme-link-font-color: var(--color-amber);
@@ -37,7 +37,7 @@
   --theme-nav-explore-background: var(--color-gray-70);
   --theme-nav-heading-font-color: var(--color-smoke);
   --theme-nav-secondary-background: var(--color-jet-20);
-  --theme-note-color: var(--color-blue);
+  --theme-note-color: var(--color-denim);
   --theme-page-version-menu-background: var(--color-jet-20);
   --theme-page-version-missing-font-color: var(--color-gray-30);
   --theme-panel-background: var(--color-jet-30);
