@@ -73,8 +73,7 @@
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
   --heading-font-color: var(--theme-heading-font-color);
-  --heading-font-weight: normal;
-  --alt-heading-font-weight: var(--body-font-weight-bold);
+  --heading-font-weight: 600;
   --section-divider-color: var(--theme-section-divider-color);
   --link-font-color: var(--theme-link-font-color);
   --link_hover-font-color: var(--theme-link_hover-font-color);
