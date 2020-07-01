@@ -118,7 +118,7 @@ html.is-clipped--navbar {
 .navbar-link {
   color: var(--navbar-menu-font-color);
   display: block;
-  line-height: var(--doc-line-height);
+  line-height: 1;
   padding: 0.5rem 1rem;
   position: relative;
 }
@@ -239,16 +239,12 @@ html.is-clipped--navbar {
   }
 
   .navbar-dropdown .navbar-item {
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 3rem 0.2rem 1rem;
     white-space: nowrap;
   }
 
   .navbar-dropdown .navbar-item:last-child {
     border-radius: inherit;
-  }
-
-  .navbar-dropdown a.navbar-item {
-    padding-right: 3rem;
   }
 
   .navbar-dropdown.is-right {
