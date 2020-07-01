@@ -28,7 +28,7 @@ html.is-clipped--navbar {
   padding: 0 0.375rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen {
   .navbar-end > .navbar-item,
   .navbar-end .navbar-link {
     color: var(--navbar-font-color);
@@ -153,30 +153,7 @@ html.is-clipped--navbar {
   margin: 0.25rem 0;
 }
 
-@media screen and (max-width: 1023px) {
-  .navbar-brand .navbar-item {
-    align-items: center;
-    display: flex;
-  }
-
-  .navbar-menu {
-    background: var(--navbar-menu-background);
-    padding: 0.5rem 0;
-  }
-
-  .navbar-menu.is-active {
-    display: block;
-    max-height: var(--nav-height);
-    overflow-y: auto;
-  }
-
-  .navbar-menu a.navbar-item:hover,
-  .navbar-menu .navbar-link:hover {
-    background-color: var(--navbar-menu_hover-background);
-  }
-}
-
-@media screen and (min-width: 1024px) {
+@media screen {
   .navbar,
   .navbar-menu,
   .navbar-end {
