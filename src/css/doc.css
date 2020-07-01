@@ -5,7 +5,7 @@
   line-height: var(--doc-line-height);
   margin: var(--doc-margin);
   max-width: var(--doc-max-width);
-  padding: 0 1rem 4rem;
+  padding: 0 1rem 2rem;
 }
 
 @media screen and (min-width: 1024px) {
