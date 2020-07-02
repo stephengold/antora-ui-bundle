@@ -2,8 +2,8 @@ var currentTheme = window.localStorage.getItem('theme')
 if (currentTheme) {
   setTheme(currentTheme)
 } else {
-  //set dark by default
-  setTheme('dark')
+  //set 'light' by default
+  setTheme('light')
 }
 
 function setTheme (x) {
