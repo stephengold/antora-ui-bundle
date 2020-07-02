@@ -67,7 +67,23 @@
   color: var(--toolbar-muted-color);
 }
 
+[data-theme="canyon"] {
+  --jme-home-icon: url(../img/home.svg);
+  --jme-home-o-icon: url(../img/home-o.svg);
+  --jme-menu-icon: url(../img/menu.svg);
+  --jme-back-icon: url(../img/back.svg);
+  --jme-close-icon: url(../img/close.svg);
+}
+
 [data-theme="dark"] {
+  --jme-home-icon: url(../img/home_light.svg);
+  --jme-home-o-icon: url(../img/home-o_light.svg);
+  --jme-menu-icon: url(../img/menu_light.svg);
+  --jme-back-icon: url(../img/back_light.svg);
+  --jme-close-icon: url(../img/close_light.svg);
+}
+
+[data-theme="jungle"] {
   --jme-home-icon: url(../img/home_light.svg);
   --jme-home-o-icon: url(../img/home-o_light.svg);
   --jme-menu-icon: url(../img/menu_light.svg);
@@ -81,4 +97,20 @@
   --jme-menu-icon: url(../img/menu.svg);
   --jme-back-icon: url(../img/back.svg);
   --jme-close-icon: url(../img/close.svg);
+}
+
+[data-theme="pastel"] {
+  --jme-home-icon: url(../img/home.svg);
+  --jme-home-o-icon: url(../img/home-o.svg);
+  --jme-menu-icon: url(../img/menu.svg);
+  --jme-back-icon: url(../img/back.svg);
+  --jme-close-icon: url(../img/close.svg);
+}
+
+[data-theme="phosphor"] {
+  --jme-home-icon: url(../img/home_light.svg);
+  --jme-home-o-icon: url(../img/home-o_light.svg);
+  --jme-menu-icon: url(../img/menu_light.svg);
+  --jme-back-icon: url(../img/back_light.svg);
+  --jme-close-icon: url(../img/close_light.svg);
 }
