@@ -1,10 +1,61 @@
 = Hardware and Software Requirements
 Author Name
+:!example-caption:
 :idprefix:
 :idseparator: -
-:!example-caption:
-:!table-caption:
+:item: &rarr;
 :page-pagination:
+:page-toclevels: 3
+:!table-caption:
+:url-shape: https://stephengold.github.io/Minie/minie/javadoc/com/jme3/bullet/collision/shapes
+
+To attempt real-time simulation, specify `maxSteps` > 0.
+The time step will be `space.getAccuracy()`
+and up to `maxSteps` steps will be simulated for each update.
+
+NOTE: `GImpactCollisionShape` should be your last resort!
+Quisque pharetra tristique arcu fringilla dapibus.
+Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
+Quisque pharetra tristique arcu fringilla dapibus.
+Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
+
+
+[cols="2*",grid="none"]
+|===
+
+|2. {url-shape}/BoxCollisionShape.html[`BoxCollisionShape`]
+
+{item} convex +
+{item} positive margin +
+{item} precise +
+{item} fully scalable +
+{item} symmetric
+|image:https://i.imgur.com/My74h2Q.png[height=160]
+
+|16. {url-shape}/SphereCollisionShape.html[`SphereCollisionShape`]
+
+{item} convex +
+{item} zero margin +
+{item} precise +
+{item} uniform scaling only +
+{item} symmetric
+|image:https://i.imgur.com/OPYrxRe.png[height=160]
+
+|===
+
+[source,java]
+----
+DebugInitListener callbackObject = new DebugInitListener() { // comment here
+    public void bulletDebugInit(Node physicsDebugRootNode) {
+        AmbientLight ambient = new AmbientLight(new ColorRGBA(1f, 1f, 1f, 1f));
+        physicsDebugRootNode.addLight(ambient);
+        DirectionalLight sun = new DirectionalLight(direction, dColor);
+        sun.setName("sun");
+        physicsDebugRootNode.addLight(sun);
+    }
+};
+bulletAppState.setDebugInitListener(callbackObject);
+----
 
 image:multirepo-ssg.svg[Multirepo SSG,200,float=right]
 Platonem complectitur mediocritatem ea eos.
@@ -14,10 +65,12 @@ Vis no velit audiam, sonet <<dependencies,praesent>> eum ne.
 *Prompta eripuit* nec ad.
 Integer diam enim, dignissim eget eros et, ultricies mattis odio.
 Vestibulum consectetur nec urna a luctus.
-Quisque pharetra tristique arcu fringilla dapibus.
-Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
 
 == Cu solet
+=== L3A
+=== L3B
+==== L4A
+==== L4B
 
 Nominavi luptatum eos, an vim hinc philosophia intellegebat.
 Lorem pertinacia `expetenda` et nec, [.underline]#wisi# illud [.line-through]#sonet# qui ea.
