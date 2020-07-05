@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 769px) {
   .nav {
-    box-shadow: 0.5px 0 3px var(--nav-border-color);
+    box-shadow: 10px 0 20px -10px var(--nav-border-color);
   }
 }
 
