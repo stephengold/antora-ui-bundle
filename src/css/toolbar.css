@@ -17,7 +17,7 @@
 }
 
 .nav-toggle {
-  background: var(--jme-menu-icon) no-repeat 50% 47.5%;
+  background: var(--theme-menu-icon) no-repeat 50% 47.5%;
   background-size: 49%;
   border: none;
   outline: none;
@@ -35,12 +35,12 @@
 }
 
 .nav-toggle.is-active {
-  background-image: var(--jme-back-icon);
+  background-image: var(--theme-back-icon);
   background-size: 41.5%;
 }
 
 .home-link {
-  background: var(--jme-home-o-icon) no-repeat 50% 45%;
+  background: var(--theme-home-o-icon) no-repeat 50% 45%;
   background-size: 50%;
   display: block;
   height: 2.5rem;
@@ -50,7 +50,7 @@
 
 .home-link:hover,
 .home-link.is-current {
-  background-image: var(--jme-home-icon);
+  background-image: var(--theme-home-icon);
 }
 
 .edit-this-page {
@@ -68,49 +68,49 @@
 }
 
 [data-theme="canyon"] {
-  --jme-home-icon: url(../img/home.svg);
-  --jme-home-o-icon: url(../img/home-o.svg);
-  --jme-menu-icon: url(../img/menu.svg);
-  --jme-back-icon: url(../img/back.svg);
-  --jme-close-icon: url(../img/close.svg);
+  --theme-home-icon: url(../img/home.svg);
+  --theme-home-o-icon: url(../img/home-o.svg);
+  --theme-menu-icon: url(../img/menu.svg);
+  --theme-back-icon: url(../img/back.svg);
+  --theme-close-icon: url(../img/close.svg);
 }
 
 [data-theme="dark"] {
-  --jme-home-icon: url(../img/home_light.svg);
-  --jme-home-o-icon: url(../img/home-o_light.svg);
-  --jme-menu-icon: url(../img/menu_light.svg);
-  --jme-back-icon: url(../img/back_light.svg);
-  --jme-close-icon: url(../img/close_light.svg);
+  --theme-home-icon: url(../img/home_light.svg);
+  --theme-home-o-icon: url(../img/home-o_light.svg);
+  --theme-menu-icon: url(../img/menu_light.svg);
+  --theme-back-icon: url(../img/back_light.svg);
+  --theme-close-icon: url(../img/close_light.svg);
 }
 
 [data-theme="jungle"] {
-  --jme-home-icon: url(../img/home_light.svg);
-  --jme-home-o-icon: url(../img/home-o_light.svg);
-  --jme-menu-icon: url(../img/menu_light.svg);
-  --jme-back-icon: url(../img/back_light.svg);
-  --jme-close-icon: url(../img/close_light.svg);
+  --theme-home-icon: url(../img/home_light.svg);
+  --theme-home-o-icon: url(../img/home-o_light.svg);
+  --theme-menu-icon: url(../img/menu_light.svg);
+  --theme-back-icon: url(../img/back_light.svg);
+  --theme-close-icon: url(../img/close_light.svg);
 }
 
 [data-theme="light"] {
-  --jme-home-icon: url(../img/home.svg);
-  --jme-home-o-icon: url(../img/home-o.svg);
-  --jme-menu-icon: url(../img/menu.svg);
-  --jme-back-icon: url(../img/back.svg);
-  --jme-close-icon: url(../img/close.svg);
+  --theme-home-icon: url(../img/home.svg);
+  --theme-home-o-icon: url(../img/home-o.svg);
+  --theme-menu-icon: url(../img/menu.svg);
+  --theme-back-icon: url(../img/back.svg);
+  --theme-close-icon: url(../img/close.svg);
 }
 
 [data-theme="pastel"] {
-  --jme-home-icon: url(../img/home.svg);
-  --jme-home-o-icon: url(../img/home-o.svg);
-  --jme-menu-icon: url(../img/menu.svg);
-  --jme-back-icon: url(../img/back.svg);
-  --jme-close-icon: url(../img/close.svg);
+  --theme-home-icon: url(../img/home.svg);
+  --theme-home-o-icon: url(../img/home-o.svg);
+  --theme-menu-icon: url(../img/menu.svg);
+  --theme-back-icon: url(../img/back.svg);
+  --theme-close-icon: url(../img/close.svg);
 }
 
 [data-theme="phosphor"] {
-  --jme-home-icon: url(../img/home_light.svg);
-  --jme-home-o-icon: url(../img/home-o_light.svg);
-  --jme-menu-icon: url(../img/menu_green.svg);
-  --jme-back-icon: url(../img/back_green.svg);
-  --jme-close-icon: url(../img/close_light.svg);
+  --theme-home-icon: url(../img/home_light.svg);
+  --theme-home-o-icon: url(../img/home-o_light.svg);
+  --theme-menu-icon: url(../img/menu_green.svg);
+  --theme-back-icon: url(../img/back_green.svg);
+  --theme-close-icon: url(../img/close_light.svg);
 }
