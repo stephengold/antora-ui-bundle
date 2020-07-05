@@ -155,7 +155,7 @@ html.is-clipped--nav {
 }
 
 .nav-item-toggle {
-  background: transparent url(../img/caret.svg) no-repeat center / 85%;
+  background: transparent var(--theme-caret-icon) no-repeat center / 85%;
   border: none;
   outline: none;
   line-height: inherit;
@@ -200,7 +200,7 @@ html.is-clipped--nav {
 }
 
 .nav-panel-explore .context .version {
-  background-image: url(../img/chevron.svg);
+  background-image: var(--theme-chevron-icon);
   background-repeat: no-repeat;
   background-position: right 0.5rem top 50%;
   background-size: auto 0.75em;
@@ -326,4 +326,34 @@ input:checked + .slider {
 
 input:checked + .slider::before {
   transform: translateX(16px);
+}
+
+[data-theme="canyon"] {
+  --theme-caret-icon: url(../img/caret.svg);
+  --theme-chevron-icon: url(../img/chevron.svg);
+}
+
+[data-theme="dark"] {
+  --theme-caret-icon: url(../img/caret_light.svg);
+  --theme-chevron-icon: url(../img/chevron_light.svg);
+}
+
+[data-theme="jungle"] {
+  --theme-caret-icon: url(../img/caret_light.svg);
+  --theme-chevron-icon: url(../img/chevron_light.svg);
+}
+
+[data-theme="light"] {
+  --theme-caret-icon: url(../img/caret.svg);
+  --theme-chevron-icon: url(../img/chevron.svg);
+}
+
+[data-theme="pastel"] {
+  --theme-caret-icon: url(../img/caret.svg);
+  --theme-chevron-icon: url(../img/chevron.svg);
+}
+
+[data-theme="phosphor"] {
+  --theme-caret-icon: url(../img/caret_green.svg);
+  --theme-chevron-icon: url(../img/chevron_green.svg);
 }
