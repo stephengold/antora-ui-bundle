@@ -72,7 +72,6 @@
   --theme-home-o-icon: url(../img/home-o.svg);
   --theme-menu-icon: url(../img/menu.svg);
   --theme-back-icon: url(../img/back.svg);
-  --theme-close-icon: url(../img/close.svg);
 }
 
 [data-theme="dark"] {
@@ -80,7 +79,6 @@
   --theme-home-o-icon: url(../img/home-o_light.svg);
   --theme-menu-icon: url(../img/menu_light.svg);
   --theme-back-icon: url(../img/back_light.svg);
-  --theme-close-icon: url(../img/close_light.svg);
 }
 
 [data-theme="jungle"] {
@@ -88,7 +86,6 @@
   --theme-home-o-icon: url(../img/home-o_light.svg);
   --theme-menu-icon: url(../img/menu_light.svg);
   --theme-back-icon: url(../img/back_light.svg);
-  --theme-close-icon: url(../img/close_light.svg);
 }
 
 [data-theme="light"] {
@@ -96,7 +93,6 @@
   --theme-home-o-icon: url(../img/home-o.svg);
   --theme-menu-icon: url(../img/menu.svg);
   --theme-back-icon: url(../img/back.svg);
-  --theme-close-icon: url(../img/close.svg);
 }
 
 [data-theme="pastel"] {
@@ -104,7 +100,6 @@
   --theme-home-o-icon: url(../img/home-o.svg);
   --theme-menu-icon: url(../img/menu.svg);
   --theme-back-icon: url(../img/back.svg);
-  --theme-close-icon: url(../img/close.svg);
 }
 
 [data-theme="phosphor"] {
@@ -112,5 +107,4 @@
   --theme-home-o-icon: url(../img/home-o_light.svg);
   --theme-menu-icon: url(../img/menu_green.svg);
   --theme-back-icon: url(../img/back_green.svg);
-  --theme-close-icon: url(../img/close_light.svg);
 }
