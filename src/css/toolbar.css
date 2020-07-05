@@ -110,7 +110,7 @@
 [data-theme="phosphor"] {
   --jme-home-icon: url(../img/home_light.svg);
   --jme-home-o-icon: url(../img/home-o_light.svg);
-  --jme-menu-icon: url(../img/menu_light.svg);
-  --jme-back-icon: url(../img/back_light.svg);
+  --jme-menu-icon: url(../img/menu_green.svg);
+  --jme-back-icon: url(../img/back_green.svg);
   --jme-close-icon: url(../img/close_light.svg);
 }
