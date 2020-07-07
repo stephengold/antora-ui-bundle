@@ -18,17 +18,17 @@
   --scrollbar-thumb-color: var(--theme-scrollbar-thumb-color);
   /* navbar -- not themed! */
   --navbar-background: var(--color-jet-70);
-  --navbar-font-color: var(--color-smoke);
+  --navbar-font-color: var(--color-white);
   --navbar_hover-background: var(--color-jet-70);
   --navbar-brand-font-size: calc(22 / var(--rem-base) * 1rem);
-  --navbar-button-background: var(--color-smoke);
+  --navbar-button-background: var(--color-white);
   --navbar-button-border-color: var(--color-gray-30);
   --navbar-button-font-color: var(--color-jet-70);
   --navbar-font-size: calc(16 / var(--rem-base) * 1rem);
   --navbar-menu-border-color: var(--color-jet-70);
   --navbar-menu-background: var(--color-gray-30);
   --navbar-menu-font-color: var(--color-jet-70);
-  --navbar-menu_hover-background: var(--color-smoke);
+  --navbar-menu_hover-background: var(--color-white);
   --navbar-slider-color: var(--color-gray-30);
   /* nav */
   --nav-background: var(--theme-nav-background);

@@ -1,5 +1,5 @@
 [data-theme="canyon"] {
-  --color-smoke: #e1e1e1;
+  --color-white: #fff;
   --color-gray-20: #bbb;
   --color-gray-30: #8e8e8e;
   --color-gray-70: #5d5d5d;
@@ -14,7 +14,7 @@
   --color-straw: #d3cd99;
   --color-tomato: #c42;
   --theme-admonition-background: var(--color-straw);
-  --theme-admonition-on-color: var(--color-smoke);
+  --theme-admonition-on-color: var(--color-white);
   --theme-background: var(--color-beige);
   --theme-body-font-color: var(--color-jet-70);
   --theme-caption-font-color: var(--color-jet-70);
@@ -22,7 +22,7 @@
   --theme-code-font-color: var(--color-jet-70);
   --theme-doc-font-color: var(--color-jet-70);
   --theme-example-background: var(--color-straw);
-  --theme-footer-font-color: var(--color-smoke);
+  --theme-footer-font-color: var(--color-white);
   --theme-footer-link-font-color: var(--color-jet-70);
   --theme-footer-background: var(--color-sage);
   --theme-heading-font-color: var(--color-gray-70);

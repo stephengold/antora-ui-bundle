@@ -1,5 +1,5 @@
 [data-theme="pastel"] {
-  --color-smoke: #e1e1e1;
+  --color-white: #fff;
   --color-gray-30: #8e8e8e;
   --color-gray-70: #5d5d5d;
   --color-jet-70: #222;
@@ -16,7 +16,7 @@
   --color-sky: #73c2fb;
   --color-teal: #008080;
   --theme-admonition-background: var(--color-lime);
-  --theme-admonition-on-color: var(--color-smoke);
+  --theme-admonition-on-color: var(--color-white);
   --theme-background: var(--color-lavender);
   --theme-body-font-color: var(--color-jet-70);
   --theme-caption-font-color: var(--color-jet-70);
@@ -41,7 +41,7 @@
   --theme-note-color: var(--color-sky);
   --theme-page-version-menu-background: var(--color-peach);
   --theme-page-version-missing-font-color: var(--color-gray-30);
-  --theme-panel-background: var(--color-smoke);
+  --theme-panel-background: var(--color-white);
   --theme-pre-border-color: var(--color-gray-30);
   --theme-quote-attribution-font-color: var(--color-gray-70);
   --theme-quote-background: var(--color-peach);

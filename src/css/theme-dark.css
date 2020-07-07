@@ -1,5 +1,5 @@
 [data-theme="dark"] {
-  --color-smoke: #e1e1e1;
+  --color-white: #fff;
   --color-gray-10: #d3d3d3;
   --color-gray-30: #8e8e8e;
   --color-gray-70: #5d5d5d;
@@ -14,18 +14,18 @@
   --color-red: #f22;
   --color-teal: #008080;
   --theme-admonition-background: var(--color-jet-20);
-  --theme-admonition-on-color: var(--color-smoke);
+  --theme-admonition-on-color: var(--color-white);
   --theme-background: var(--color-jet-30);
-  --theme-body-font-color: var(--color-smoke);
+  --theme-body-font-color: var(--color-white);
   --theme-caption-font-color: var(--color-gray-10);
   --theme-caution-color: var(--color-red);
   --theme-code-font-color: var(--color-green-20);
-  --theme-doc-font-color: var(--color-smoke);
+  --theme-doc-font-color: var(--color-white);
   --theme-example-background: var(--color-jet-20);
-  --theme-footer-font-color: var(--color-smoke);
+  --theme-footer-font-color: var(--color-white);
   --theme-footer-link-font-color: var(--color-jet-90);
   --theme-footer-background: var(--color-jet-20);
-  --theme-heading-font-color: var(--color-smoke);
+  --theme-heading-font-color: var(--color-white);
   --theme-highlight-comment-font-color: var(--color-gray-30);
   --theme-highlight-keyword-font-color: var(--color-amber);
   --theme-highlight-literal-font-color: var(--color-teal);
@@ -44,14 +44,14 @@
   --theme-quote-attribution-font-color: var(--color-gray-10);
   --theme-quote-background: var(--color-jet-30);
   --theme-quote-border-color: var(--color-gray-30);
-  --theme-quote-font-color: var(--color-smoke);
+  --theme-quote-font-color: var(--color-white);
   --theme-scrollbar-thumb-color: var(--color-amber);
   --theme-sidebar-background: var(--color-jet-20);
   --theme-section-divider-color: var(--color-gray-30);
   --theme-tip-color: var(--color-green-40);
-  --theme-toc-font-color: var(--color-smoke);
+  --theme-toc-font-color: var(--color-white);
   --theme-toolbar-background: var(--color-gray-70);
-  --theme-toolbar-font-color: var(--color-smoke);
+  --theme-toolbar-font-color: var(--color-white);
   --theme-toolbar-muted-color: var(--color-gray-30);
   --theme-warning-color: var(--color-amber);
 }

@@ -1,5 +1,5 @@
 [data-theme="light"] {
-  --color-smoke: #e1e1e1;
+  --color-white: #fff;
   --color-gray-10: #d3d3d3;
   --color-gray-20: #bbb;
   --color-gray-30: #8e8e8e;
@@ -13,8 +13,8 @@
   --color-red: #f22;
   --color-teal: #008080;
   --theme-admonition-background: var(--color-gray-10);
-  --theme-admonition-on-color: var(--color-smoke);
-  --theme-background: var(--color-smoke);
+  --theme-admonition-on-color: var(--color-white);
+  --theme-background: var(--color-white);
   --theme-body-font-color: var(--color-jet-70);
   --theme-caption-font-color: var(--color-jet-70);
   --theme-caution-color: var(--color-red);
@@ -38,10 +38,10 @@
   --theme-note-color: var(--color-denim);
   --theme-page-version-menu-background: var(--color-gray-10);
   --theme-page-version-missing-font-color: var(--color-gray-30);
-  --theme-panel-background: var(--color-smoke);
+  --theme-panel-background: var(--color-white);
   --theme-pre-border-color: var(--color-gray-30);
   --theme-quote-attribution-font-color: var(--color-gray-70);
-  --theme-quote-background: var(--color-smoke);
+  --theme-quote-background: var(--color-white);
   --theme-quote-border-color: var(--color-gray-30);
   --theme-quote-font-color: var(--color-jet-70);
   --theme-scrollbar-thumb-color: var(--color-denim);

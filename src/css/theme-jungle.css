@@ -1,5 +1,5 @@
 [data-theme="jungle"] {
-  --color-smoke: #e1e1e1;
+  --color-white: #fff;
   --color-gray-10: #d3d3d3;
   --color-gray-30: #8e8e8e;
   --color-jet-50: #303030;
@@ -16,15 +16,15 @@
   --color-red: #f22;
   --color-teal: #008080;
   --theme-admonition-background: var(--color-brown-70);
-  --theme-admonition-on-color: var(--color-smoke);
+  --theme-admonition-on-color: var(--color-white);
   --theme-background: var(--color-jet-70);
-  --theme-body-font-color: var(--color-smoke);
+  --theme-body-font-color: var(--color-white);
   --theme-caption-font-color: var(--color-gray-10);
   --theme-caution-color: var(--color-red);
-  --theme-code-font-color: var(--color-smoke);
-  --theme-doc-font-color: var(--color-smoke);
+  --theme-code-font-color: var(--color-white);
+  --theme-doc-font-color: var(--color-white);
   --theme-example-background: var(--color-brown-50);
-  --theme-footer-font-color: var(--color-smoke);
+  --theme-footer-font-color: var(--color-white);
   --theme-footer-link-font-color: var(--color-jet-90);
   --theme-footer-background: var(--color-brown-70);
   --theme-heading-font-color: var(--color-green-20);
@@ -46,14 +46,14 @@
   --theme-quote-attribution-font-color: var(--color-gray-10);
   --theme-quote-background: var(--color-jet-70);
   --theme-quote-border-color: var(--color-brown-20);
-  --theme-quote-font-color: var(--color-smoke);
+  --theme-quote-font-color: var(--color-white);
   --theme-scrollbar-thumb-color: var(--color-red);
   --theme-section-divider-color: var(--color-green-20);
   --theme-sidebar-background: var(--color-brown-50);
   --theme-tip-color: var(--color-green-60);
-  --theme-toc-font-color: var(--color-smoke);
+  --theme-toc-font-color: var(--color-white);
   --theme-toolbar-background: var(--color-green-80);
-  --theme-toolbar-font-color: var(--color-smoke);
+  --theme-toolbar-font-color: var(--color-white);
   --theme-toolbar-muted-color: var(--color-gray-30);
   --theme-warning-color: var(--color-amber);
 }
