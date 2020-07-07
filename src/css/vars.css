@@ -2,11 +2,9 @@
   /* fonts */
   --rem-base: 18;
   /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
-  --body-font-size: 1.0625em;
-  /* 17px */
-  --body-font-size--desktop: 1.125em;
-  /* 18px */
-  --body-font-size--print: 0.9375em;
+  --body-font-size: calc(19 / var(--rem-base) * 1rem);
+  --body-font-size--desktop: calc(20 / var(--rem-base) * 1rem);
+  --body-font-size--print: calc(17 / var(--rem-base) * 1rem);
   /* 15px */
   --body-line-height: 1.15;
   --body-font-color: var(--theme-body-font-color);
@@ -23,9 +21,11 @@
   --navbar-background: var(--color-jet-70);
   --navbar-font-color: var(--color-smoke);
   --navbar_hover-background: var(--color-jet-70);
+  --navbar-brand-font-size: calc(22 / var(--rem-base) * 1rem);
   --navbar-button-background: var(--color-smoke);
   --navbar-button-border-color: var(--color-gray-30);
   --navbar-button-font-color: var(--color-jet-70);
+  --navbar-font-size: calc(16 / var(--rem-base) * 1rem);
   --navbar-menu-border-color: var(--color-jet-70);
   --navbar-menu-background: var(--color-gray-30);
   --navbar-menu-font-color: var(--color-jet-70);
@@ -35,12 +35,14 @@
   --nav-background: var(--theme-nav-background);
   --nav-border-color: var(--theme-body-font-color);
   --nav-explore-background: var(--theme-nav-explore-background);
+  --nav-font-size: calc(17 / var(--rem-base) * 1rem);
   --nav-heading-font-color: var(--theme-heading-font-color);
   --nav-line-height: 1;
   --nav-secondary-background: var(--theme-nav-secondary-background);
   /* toolbar */
   --toolbar-background: var(--theme-toolbar-background);
   --toolbar-font-color: var(--theme-toolbar-font-color);
+  --toolbar-font-size: calc(16 / var(--rem-base) * 1rem);
   --toolbar-muted-color: var(--theme-toolbar-muted-color);
   --page-version-menu-background: var(--theme-page-version-menu-background);
   --page-version-missing-font-color: var(--theme-page-version-missing-font-color);
@@ -54,6 +56,7 @@
   --toc-line-height: 1;
   /* admonitions */
   --admonition-background: var(--theme-admonition-background);
+  --admonition-font-size: calc(16 / var(--rem-base) * 1rem);
   --admonition-label-font-weight: var(--body-font-weight-bold);
   --caution-color: var(--theme-caution-color);
   --caution-on-color: var(--theme-admonition-on-color);
@@ -72,7 +75,9 @@
   --doc-line-height: 1.3;
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
+  --h1-font-size: calc(36 / var(--rem-base) * 1rem);
   --heading-font-color: var(--theme-heading-font-color);
+  --heading-font-size: calc(27 / var(--rem-base) * 1rem);
   --heading-font-weight: 600;
   --section-divider-color: var(--theme-section-divider-color);
   --link-font-color: var(--theme-link-font-color);
@@ -82,6 +87,7 @@
   --caption-font-weight: var(--body-font-weight-bold);
   --code-background: var(--panel-background);
   --code-font-color: var(--theme-code-font-color);
+  --code-font-size: calc(16 / var(--rem-base) * 1rem);
   --example-background: var(--theme-example-background);
   --example-border-color: var(--theme-pre-border-color);
   --highlight-comment-font-color: var(--theme-highlight-comment-font-color);
@@ -90,9 +96,11 @@
   --highlight-new_method-font-color: var(--theme-highlight-new_method-font-color);
   --kbd-background: var(--panel-background);
   --kbd-border-color: var(--theme-doc-font-color);
+  --kbd-font-size: calc(12 / var(--rem-base) * 1rem);
   --pre-background: var(--panel-background);
   --pre-border-color: var(--theme-pre-border-color);
   --pre-annotation-font-color: var(--theme-highlight-comment-font-color);
+  --pre-font-size: calc(16 / var(--rem-base) * 1rem);
   --quote-background: var(--theme-quote-background);
   --quote-border-color: var(--theme-quote-border-color);
   --quote-font-color: var(--theme-quote-font-color);
@@ -102,6 +110,7 @@
   --footer-line-height: var(--doc-line-height);
   --footer-background: var(--theme-footer-background);
   --footer-font-color: var(--theme-footer-font-color);
+  --footer-font-size: calc(15 / var(--rem-base) * 1rem);
   --footer-link-font-color: var(--theme-footer-link-font-color);
   /* dimensions and positioning */
   --navbar-height: calc(38 / var(--rem-base) * 1rem);

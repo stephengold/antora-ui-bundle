@@ -5,7 +5,7 @@ html.is-clipped--navbar {
 .navbar {
   background: var(--navbar-background);
   color: var(--navbar-font-color);
-  font-size: calc(16 / var(--rem-base) * 1rem);
+  font-size: var(--navbar-font-size);
   height: var(--navbar-height);
   position: fixed;
   top: 0;
@@ -21,7 +21,7 @@ html.is-clipped--navbar {
 .navbar-brand .navbar-item:first-child,
 .navbar-brand .navbar-item:first-child a {
   color: var(--navbar-font-color);
-  font-size: calc(22 / var(--rem-base) * 1rem);
+  font-size: var(--navbar-brand-font-size);
 }
 
 .navbar-brand .separator {

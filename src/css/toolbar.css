@@ -4,7 +4,7 @@
   border-radius: 0.8rem;
   color: var(--toolbar-font-color);
   display: flex;
-  font-size: calc(16 / var(--rem-base) * 1rem);
+  font-size: var(--toolbar-font-size);
   height: var(--toolbar-height);
   justify-content: flex-start;
   position: sticky;
