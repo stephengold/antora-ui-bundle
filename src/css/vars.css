@@ -35,8 +35,9 @@
   --nav-background: var(--theme-nav-background);
   --nav-border-color: var(--theme-body-font-color);
   --nav-explore-background: var(--theme-nav-explore-background);
-  --nav-font-size: calc(17 / var(--rem-base) * 1rem);
+  --nav-font-size: calc(16 / var(--rem-base) * 1rem);
   --nav-heading-font-color: var(--theme-heading-font-color);
+  --nav-heading-font-size: calc(18 / var(--rem-base) * 1rem);
   --nav-line-height: 1;
   --nav-secondary-background: var(--theme-nav-secondary-background);
   /* toolbar */
@@ -50,9 +51,11 @@
   --toc-background: var(--theme-sidebar-background);
   --toc-border-color: var(--theme-link-font-color);
   --toc-font-color: var(--theme-toc-font-color);
-  --toc-font-size: calc(15 / var(--rem-base) * 1rem);
-  --toc-font-size--desktop: calc(17 / var(--rem-base) * 1rem);
+  --toc-font-size: calc(14 / var(--rem-base) * 1rem);
+  --toc-font-size--desktop: calc(16 / var(--rem-base) * 1rem);
   --toc-heading-font-color: var(--theme-heading-font-color);
+  --toc-heading-font-size: calc(16 / var(--rem-base) * 1rem);
+  --toc-heading-font-size--desktop: calc(18 / var(--rem-base) * 1rem);
   --toc-line-height: 1;
   /* admonitions */
   --admonition-background: var(--theme-admonition-background);
