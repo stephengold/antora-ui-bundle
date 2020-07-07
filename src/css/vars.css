@@ -5,7 +5,6 @@
   --body-font-size: calc(19 / var(--rem-base) * 1rem);
   --body-font-size--desktop: calc(20 / var(--rem-base) * 1rem);
   --body-font-size--print: calc(17 / var(--rem-base) * 1rem);
-  /* 15px */
   --body-line-height: 1.15;
   --body-font-color: var(--theme-body-font-color);
   --body-font-family: "Roboto", sans-serif;
@@ -110,10 +109,10 @@
   --quote-attribution-font-color: var(--theme-quote-attribution-font-color);
   --sidebar-background: var(--theme-sidebar-background);
   /* footer */
-  --footer-line-height: var(--doc-line-height);
   --footer-background: var(--theme-footer-background);
   --footer-font-color: var(--theme-footer-font-color);
-  --footer-font-size: calc(15 / var(--rem-base) * 1rem);
+  --footer-font-size: calc(17 / var(--rem-base) * 1rem);
+  --footer-line-height: var(--doc-line-height);
   --footer-link-font-color: var(--theme-footer-link-font-color);
   /* dimensions and positioning */
   --navbar-height: calc(38 / var(--rem-base) * 1rem);
