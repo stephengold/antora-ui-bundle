@@ -84,6 +84,7 @@
 
 .toc .toc-menu a.is-active {
   border-left-color: var(--toc-border-color);
+  font-weight: var(--body-font-weight-bold);
 }
 
 .toc .toc-menu .is-hidden-toc {
