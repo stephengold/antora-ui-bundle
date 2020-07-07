@@ -82,6 +82,7 @@
 
 .doc a {
   color: var(--link-font-color);
+  text-decoration: underline;
 }
 
 .doc a:hover {
