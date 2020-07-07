@@ -16,12 +16,12 @@
   --theme-admonition-on-color: var(--color-smoke);
   --theme-background: var(--color-smoke);
   --theme-body-font-color: var(--color-jet-70);
-  --theme-caption-font-color: var(--color-gray-70);
+  --theme-caption-font-color: var(--color-jet-70);
   --theme-caution-color: var(--color-red);
   --theme-code-font-color: var(--color-green-60);
   --theme-doc-font-color: var(--color-jet-70);
   --theme-example-background: var(--color-gray-10);
-  --theme-footer-font-color: var(--color-gray-70);
+  --theme-footer-font-color: var(--color-jet-70);
   --theme-footer-link-font-color: var(--color-jet-70);
   --theme-footer-background: var(--color-gray-10);
   --theme-heading-font-color: var(--color-gray-70);
@@ -40,17 +40,17 @@
   --theme-page-version-missing-font-color: var(--color-gray-30);
   --theme-panel-background: var(--color-smoke);
   --theme-pre-border-color: var(--color-gray-30);
-  --theme-quote-attribution-font-color: var(--color-gray-30);
+  --theme-quote-attribution-font-color: var(--color-gray-70);
   --theme-quote-background: var(--color-smoke);
   --theme-quote-border-color: var(--color-gray-30);
-  --theme-quote-font-color: var(--color-gray-70);
+  --theme-quote-font-color: var(--color-jet-70);
   --theme-scrollbar-thumb-color: var(--color-denim);
   --theme-section-divider-color: var(--color-gray-30);
   --theme-sidebar-background: var(--color-gray-10);
   --theme-tip-color: var(--color-green-40);
-  --theme-toc-font-color: var(--color-gray-70);
+  --theme-toc-font-color: var(--color-jet-70);
   --theme-toolbar-background: var(--color-gray-20);
-  --theme-toolbar-font-color: var(--color-gray-70);
+  --theme-toolbar-font-color: var(--color-jet-70);
   --theme-toolbar-muted-color: var(--color-gray-30);
   --theme-warning-color: var(--color-amber);
 }
