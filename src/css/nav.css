@@ -325,33 +325,3 @@ input:checked + .slider {
 input:checked + .slider::before {
   transform: translateX(16px);
 }
-
-[data-theme="canyon"] {
-  --theme-caret-icon: url(../img/caret.svg);
-  --theme-chevron-icon: url(../img/chevron.svg);
-}
-
-[data-theme="dark"] {
-  --theme-caret-icon: url(../img/caret_light.svg);
-  --theme-chevron-icon: url(../img/chevron_light.svg);
-}
-
-[data-theme="jungle"] {
-  --theme-caret-icon: url(../img/caret_light.svg);
-  --theme-chevron-icon: url(../img/chevron_light.svg);
-}
-
-[data-theme="light"] {
-  --theme-caret-icon: url(../img/caret.svg);
-  --theme-chevron-icon: url(../img/chevron.svg);
-}
-
-[data-theme="pastel"] {
-  --theme-caret-icon: url(../img/caret.svg);
-  --theme-chevron-icon: url(../img/chevron.svg);
-}
-
-[data-theme="phosphor"] {
-  --theme-caret-icon: url(../img/caret_green.svg);
-  --theme-chevron-icon: url(../img/chevron_green.svg);
-}

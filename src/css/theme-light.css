@@ -17,7 +17,9 @@
   --theme-background: var(--color-white);
   --theme-body-font-color: var(--color-jet-70);
   --theme-caption-font-color: var(--color-jet-70);
+  --theme-caret-icon: url(../img/caret.svg);
   --theme-caution-color: var(--color-red);
+  --theme-chevron-icon: url(../img/chevron.svg);
   --theme-code-font-color: var(--color-green-60);
   --theme-doc-font-color: var(--color-jet-70);
   --theme-example-background: var(--color-gray-10);

@@ -20,7 +20,9 @@
   --theme-background: var(--color-jet-70);
   --theme-body-font-color: var(--color-white);
   --theme-caption-font-color: var(--color-gray-10);
+  --theme-caret-icon: url(../img/caret_light.svg);
   --theme-caution-color: var(--color-red);
+  --theme-chevron-icon: url(../img/chevron_light.svg);
   --theme-code-font-color: var(--color-white);
   --theme-doc-font-color: var(--color-white);
   --theme-example-background: var(--color-brown-50);
