@@ -15,6 +15,7 @@
   --color-teal: #008080;
   --theme-admonition-background: var(--color-jet-20);
   --theme-admonition-on-color: var(--color-white);
+  --theme-back-icon: url(../img/back_light.svg);
   --theme-background: var(--color-jet-30);
   --theme-body-font-color: var(--color-white);
   --theme-caption-font-color: var(--color-gray-10);
@@ -32,9 +33,12 @@
   --theme-highlight-keyword-font-color: var(--color-amber);
   --theme-highlight-literal-font-color: var(--color-teal);
   --theme-highlight-new_method-font-color: var(--color-red);
+  --theme-home-icon: url(../img/home_light.svg);
+  --theme-home-o-icon: url(../img/home-o_light.svg);
   --theme-important-color: var(--color-purple);
   --theme-link-font-color: var(--color-amber);
   --theme-link_hover-font-color: var(--color-amber);
+  --theme-menu-icon: url(../img/menu_light.svg);
   --theme-nav-background: var(--color-jet-20);
   --theme-nav-explore-background: var(--color-gray-70);
   --theme-nav-secondary-background: var(--color-jet-20);

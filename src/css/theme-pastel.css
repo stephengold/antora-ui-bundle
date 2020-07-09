@@ -17,6 +17,7 @@
   --color-teal: #008080;
   --theme-admonition-background: var(--color-lime);
   --theme-admonition-on-color: var(--color-white);
+  --theme-back-icon: url(../img/back.svg);
   --theme-background: var(--color-lavender);
   --theme-body-font-color: var(--color-jet-70);
   --theme-caption-font-color: var(--color-jet-70);
@@ -34,9 +35,12 @@
   --theme-highlight-keyword-font-color: var(--color-gold);
   --theme-highlight-literal-font-color: var(--color-teal);
   --theme-highlight-new_method-font-color: var(--color-red);
+  --theme-home-icon: url(../img/home.svg);
+  --theme-home-o-icon: url(../img/home-o.svg);
   --theme-important-color: var(--color-purple);
   --theme-link-font-color: var(--color-denim);
   --theme-link_hover-font-color: var(--color-denim);
+  --theme-menu-icon: url(../img/menu.svg);
   --theme-nav-background: var(--color-peach);
   --theme-nav-explore-background: var(--color-rose);
   --theme-nav-secondary-background: var(--color-peach);
