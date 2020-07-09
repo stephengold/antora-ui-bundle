@@ -29,9 +29,9 @@
 
 .nav {
   background: var(--nav-background);
+  height: calc(100vh - 48px);
   position: relative;
-  top: var(--toolbar-height);
-  height: var(--nav-height);
+  top: 0;
 }
 
 @media screen and (min-width: 769px) {
