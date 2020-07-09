@@ -16,27 +16,30 @@
   color: inherit;
 }
 
+.nav-toggle-label {
+  padding: 0.5rem;
+}
+
 .nav-toggle {
-  background: var(--theme-menu-icon) no-repeat 50% 47.5%;
-  background-size: 49%;
+  background: var(--theme-chevron-icon) no-repeat 50%;
+  background-size: 28%;
   border: none;
-  outline: none;
-  line-height: inherit;
   height: 2.5rem;
-  padding: 0;
+  margin-left: -1.2rem;
+  margin-right: 1rem;
+  transform: rotate(270deg);
   width: 2.5rem;
-  margin-right: -0.25rem;
 }
 
 @media screen and (min-width: 1024px) {
+  .nav-toggle-label,
   .nav-toggle {
     display: none;
   }
 }
 
 .nav-toggle.is-active {
-  background-image: var(--theme-back-icon);
-  background-size: 41.5%;
+  transform: rotate(90deg);
 }
 
 .home-link {
