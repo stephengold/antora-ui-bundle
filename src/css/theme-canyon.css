@@ -7,6 +7,7 @@
   --color-beige: #ccccb3;
   --color-copper-20: #dbad82;
   --color-copper-50: #b87333;
+  --color-grass: #78b160;
   --color-khaki: #bcb88a;
   --color-purple: #a0439c;
   --color-sage: #568430;
@@ -39,7 +40,7 @@
   --theme-link-font-color: var(--color-sage);
   --theme-link_hover-font-color: var(--color-sage);
   --theme-nav-background: var(--color-copper-20);
-  --theme-nav-explore-background: var(--color-khaki);
+  --theme-nav-explore-background: var(--color-grass);
   --theme-nav-secondary-background: var(--color-straw);
   --theme-note-color: var(--color-sky);
   --theme-page-version-menu-background: var(--color-straw);
