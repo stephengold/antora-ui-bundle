@@ -49,10 +49,10 @@
   /* toc */
   --toc-background: var(--theme-sidebar-background);
   --toc-font-color: var(--theme-toc-font-color);
-  --toc-font-size: calc(14 / var(--rem-base) * 1rem);
+  --toc-font-size: calc(16 / var(--rem-base) * 1rem);
   --toc-font-size--desktop: calc(16 / var(--rem-base) * 1rem);
   --toc-heading-font-color: var(--theme-heading-font-color);
-  --toc-heading-font-size: calc(16 / var(--rem-base) * 1rem);
+  --toc-heading-font-size: calc(18 / var(--rem-base) * 1rem);
   --toc-heading-font-size--desktop: calc(18 / var(--rem-base) * 1rem);
   --toc-line-height: 1;
   /* admonitions */
