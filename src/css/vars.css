@@ -48,7 +48,6 @@
   --page-version-missing-font-color: var(--theme-page-version-missing-font-color);
   /* toc */
   --toc-background: var(--theme-sidebar-background);
-  --toc-border-color: var(--theme-link-font-color);
   --toc-font-color: var(--theme-toc-font-color);
   --toc-font-size: calc(14 / var(--rem-base) * 1rem);
   --toc-font-size--desktop: calc(16 / var(--rem-base) * 1rem);
@@ -127,7 +126,7 @@
   --nav-width: calc(250 / var(--rem-base) * 1rem);
   --toc-top: calc(var(--body-top) + var(--toolbar-height));
   --toc-height: calc(100vh - var(--toc-top) - 2.5rem);
-  --toc-width: calc(162 / var(--rem-base) * 1rem);
+  --toc-width: calc(198 / var(--rem-base) * 1rem);
   --toc-width--widescreen: calc(250 / var(--rem-base) * 1rem);
   --doc-max-width: calc(720 / var(--rem-base) * 1rem);
   --doc-max-width--desktop: calc(900 / var(--rem-base) * 1rem);
