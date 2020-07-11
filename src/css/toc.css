@@ -37,6 +37,7 @@
 }
 
 .toc.sidebar .toc-menu ul {
+  margin-top: 0;
   max-height: var(--toc-height);
   overflow-y: scroll;
   scrollbar-color: var(--scrollbar-thumb-color) transparent;
