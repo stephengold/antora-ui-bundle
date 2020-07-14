@@ -17,7 +17,8 @@
 }
 
 .nav-toggle-label {
-  padding: 0.5rem;
+  background-color: var(--toolbar-background);
+  border: none;
 }
 
 .nav-toggle {
