@@ -19,6 +19,7 @@
 .nav-toggle-label {
   background-color: var(--toolbar-background);
   border: none;
+  color: var(--toolbar-font-color);
 }
 
 .nav-toggle {
