@@ -29,11 +29,13 @@
   hyphens: none;
   line-height: 1.3;
   margin: 1rem 0 0;
+  padding-left: 1.5rem;
 }
 
 .doc > h1.page:first-child {
   font-size: var(--h1-font-size);
   margin: 2.5rem 0;
+  padding-left: 0;
 }
 
 #preamble + .sect1,
@@ -43,9 +45,8 @@
 
 .doc h2:not(.discrete) {
   border-top: 1px solid var(--section-divider-color);
-  margin-left: -1rem;
-  margin-right: -1rem;
-  padding: 0.4rem 1rem 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-top: 0.4rem;
 }
 
 .doc h1 .anchor,
@@ -56,11 +57,11 @@
 .doc h6 .anchor {
   position: absolute;
   text-decoration: none;
-  width: 1.75ex;
   margin-left: -1.5rem;
   font-size: 0.8em;
   font-weight: var(--heading-font-weight);
   padding-top: 0.05em;
+  width: 1.5rem;
 }
 
 .doc h1 .anchor::before,
