@@ -33,6 +33,7 @@
   --theme-important-color: var(--color-30);
   --theme-link-font-color: var(--color-30);
   --theme-link_hover-font-color: var(--color-30);
+  --theme-muted-font-color: var(--color-50);
   --theme-nav-background: var(--color-80);
   --theme-nav-explore-background: var(--color-70);
   --theme-nav-secondary-background: var(--color-80);
@@ -52,6 +53,5 @@
   --theme-toc-font-color: var(--color-10);
   --theme-toolbar-background: var(--color-70);
   --theme-toolbar-font-color: var(--color-10);
-  --theme-toolbar-muted-color: var(--color-50);
   --theme-warning-color: var(--color-30);
 }

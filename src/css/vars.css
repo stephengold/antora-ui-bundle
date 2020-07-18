@@ -11,6 +11,7 @@
   --body-font-weight-bold: 600;
   --monospace-font-family: "Roboto Mono", monospace;
   --monospace-font-weight-bold: 600;
+  --muted-font-color: var(--theme-muted-font-color);
   /* base */
   --body-background: var(--theme-background);
   --panel-background: var(--theme-panel-background);
@@ -43,7 +44,6 @@
   --toolbar-background: var(--theme-toolbar-background);
   --toolbar-font-color: var(--theme-toolbar-font-color);
   --toolbar-font-size: calc(16 / var(--rem-base) * 1rem);
-  --toolbar-muted-color: var(--theme-toolbar-muted-color);
   --page-version-menu-background: var(--theme-page-version-menu-background);
   --page-version-missing-font-color: var(--theme-page-version-missing-font-color);
   /* toc */

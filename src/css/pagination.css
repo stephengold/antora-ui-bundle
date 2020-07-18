@@ -18,7 +18,7 @@ nav.pagination .next {
 }
 
 nav.pagination span::before {
-  color: var(--toolbar-muted-color);
+  color: var(--muted-font-color);
   font-size: 0.75em;
 }
 
@@ -38,7 +38,7 @@ nav.pagination a {
 
 nav.pagination a::before,
 nav.pagination a::after {
-  color: var(--toolbar-muted-color);
+  color: var(--muted-font-color);
   position: absolute;
   width: 1rem;
 }

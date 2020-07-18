@@ -40,6 +40,7 @@
   --theme-important-color: var(--color-purple);
   --theme-link-font-color: var(--color-red);
   --theme-link_hover-font-color: var(--color-red);
+  --theme-muted-font-color: var(--color-gray-30);
   --theme-nav-background: var(--color-green-60);
   --theme-nav-explore-background: var(--color-green-80);
   --theme-nav-secondary-background: var(--color-green-60);
@@ -59,6 +60,5 @@
   --theme-toc-font-color: var(--color-white);
   --theme-toolbar-background: var(--color-green-80);
   --theme-toolbar-font-color: var(--color-white);
-  --theme-toolbar-muted-color: var(--color-gray-30);
   --theme-warning-color: var(--color-amber);
 }
