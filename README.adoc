@@ -5,7 +5,7 @@
 :hide-uri-scheme:
 // Project URLs:
 :url-project: https://gitlab.com/antora/antora-ui-default
-:url-preview: https://antora.gitlab.io/antora-ui-default
+:url-preview: https://stephengold.github.io/Minie/minie/overview.html
 :url-ci-pipelines: {url-project}/pipelines
 :img-ci-status: {url-project}/badges/master/pipeline.svg
 // External URLs:
@@ -20,13 +20,8 @@
 :url-nvm-install: {url-nvm}#installation
 :url-source-maps: https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map
 
-image:{img-ci-status}[CI Status (GitLab CI), link={url-ci-pipelines}]
-
-This project is an archetype that demonstrates how to produce a UI bundle that can be used by {url-antora}[Antora] to generated a documentation site.
-You can see a preview of the default UI at {url-preview}.
-
-While the default UI is ready to be used with Antora, the intent is that you'll fork it and customize it for your own needs.
-It's intentionally minimalistic so as to give you a good starting point without requiring too much effort to customize.
+This project produces a UI bundle that can be used by {url-antora}[Antora] to generate a documentation website.
+You can see it in use at {url-preview}.
 
 == Use the Default UI
 
