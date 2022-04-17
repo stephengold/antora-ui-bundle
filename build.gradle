@@ -1,10 +1,10 @@
 // Gradle build script for the antora-ui-bundle project
 
 plugins {
-    id 'base'
+    id 'base' // to add a "clean" task to the project
 }
 
-// cleanup tasks
+// cleanup tasks:
 
 clean.dependsOn('cleanModules', 'cleanPublic')
 task cleanModules(type: Delete) {
