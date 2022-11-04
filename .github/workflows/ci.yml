@@ -42,10 +42,10 @@ jobs:
 
       # Detects any updates to package-lock.json and package.json
       # and commits the files.
-      # See https://github.com/marketplace/actions/add-commit?version=v4.1.0
+      # See https://github.com/marketplace/actions/add-commit
       # for use options.
       - name: Commit packages
-        uses: EndBug/add-and-commit@v4
+        uses: EndBug/add-and-commit@v9
         with:
           message: "Commit files for CI workflow"
           # Commits these files if and only if there are changes.
