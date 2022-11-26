@@ -1,5 +1,5 @@
 ---
-# GitHub workflow for commits pushed to the antori-ui-bundle repo
+# GitHub Actions workflow for commits pushed to the antori-ui-bundle repo
 
 # This workflow will commit "package-lock.json" and "package.json" if
 # changes occur to those files.
@@ -18,7 +18,7 @@ jobs:
     strategy:
       matrix:
         # Specify Node.js version (to maintain stability).
-        node-version: [18.12.0]
+        node-version: [18.12.1]
     steps:
       - name: Clone the repo
         uses: actions/checkout@v3
