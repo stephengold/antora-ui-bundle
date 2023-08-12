@@ -3,7 +3,7 @@
 :idprefix:
 :idseparator: -
 // URIs:
-:uri-project: https://gitlab.com/antora/antora-ui-default.git
+:uri-project: https://github.com/stephengold/antora-ui-bundle.git
 
 Before you can start working on the UI, you need to grab the sources and initialize the project.
 The sources can be {uri-project}[Antora's default UI] or an existing UI project structured to work with Antora.

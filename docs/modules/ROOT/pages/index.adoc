@@ -6,8 +6,8 @@
 :hide-uri-scheme:
 // URIs:
 :uri-antora: https://antora.org
-:uri-repo: https://gitlab.com/antora/antora-ui-default
-:uri-preview: https://antora.gitlab.io/antora-ui-default
+:uri-repo: https://github.com/stephengold/antora-ui-bundle
+:uri-preview: https://stephengold.github.io/Minie/minie/overview.html
 :uri-hbs: http://handlebarsjs.com
 :uri-gulp: http://gulpjs.com
 :uri-npm: https://npmjs.com
