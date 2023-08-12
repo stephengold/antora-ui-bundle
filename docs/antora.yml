@@ -1,5 +1,5 @@
-name: jmonkeyengine-ui
-title: jMonkeyEngine UI
-version: master
+name: antora-ui-bundle
+title: Antora UI for Acorus/Libbulletjme/Minie
+version: ~
 nav:
 - modules/ROOT/nav.adoc
