@@ -1,5 +1,4 @@
 = Antora Default UI
-
 // Settings:
 :experimental:
 :hide-uri-scheme:
@@ -100,12 +99,9 @@ Verify the Gulp CLI is installed and on your PATH by running:
 
  $ gulp --version
 
-[TIP]
-====
 If you prefer to install global packages using Yarn, run this command instead:
 
  $ yarn global add gulp-cli
-====
 
 Alternately, you can use the `gulp` command that is installed by the project's dependencies.
 

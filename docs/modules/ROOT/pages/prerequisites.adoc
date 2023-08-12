@@ -2,7 +2,7 @@
 // Settings:
 :idprefix:
 :idseparator: -
-// URIs:
+// URLs:
 :url-nvm: https://github.com/creationix/nvm
 :url-node: https://nodejs.org
 :url-gulp: http://gulpjs.com
