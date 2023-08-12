@@ -42,7 +42,7 @@ Read on to learn how to customize the default UI for your own documentation.
 == Development Quickstart
 
 This section offers a basic tutorial to teach you how to set up the default UI project, preview it locally, and bundle it for use with Antora.
-A more comprehensive can be found in the documentation at {url-antora-docs}.
+A more comprehensive tutorial can be found in the documentation at {url-antora-docs}.
 
 === Prerequisites
 
@@ -188,11 +188,11 @@ These map files sit adjacent to the combined files in the build folder.
 The mapping they provide allows the debugger to present the original source rather than the obfuscated file, an essential tool for debugging.
 
 In preview mode, source maps are enabled automatically, so there's nothing you have to do to make use of them.
-If you need to include source maps in the bundle, you can do so by setting the `SOURCEMAPS` environment varible to `true` when you run the bundle command:
+If you need to include source maps in the bundle, you can do so by setting the `SOURCEMAPS` environment variable to `true` when you run the bundle command:
 
  $ SOURCEMAPS=true gulp bundle
 
-In this case, the bundle will include the source maps, which can be used for debuggging your production site.
+In this case, the bundle will include the source maps, which can be used for debugging your production site.
 
 == Copyright and License
 
