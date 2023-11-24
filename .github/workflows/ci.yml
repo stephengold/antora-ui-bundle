@@ -18,7 +18,7 @@ jobs:
     strategy:
       matrix:
         # Specify Node.js version (to maintain stability).
-        node-version: [20.9.0]
+        node-version: [20.10.0]
     steps:
       - name: Clone the repo
         uses: actions/checkout@v4
