@@ -123,7 +123,7 @@ Stay in this project folder when executing all subsequent commands.
 Use npm to install the project's dependencies inside the project.
 In your terminal, execute the following command:
 
- $ npm install
+ $ npm install --force
 
 This command installs the dependencies listed in [.path]_package.json_ into the [.path]_node_modules/_ folder inside the project.
 This folder does not get included in the UI bundle and should _not_ be committed to the source control repository.
