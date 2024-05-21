@@ -1,4 +1,4 @@
-// Gradle build script for the antora-ui-bundle project
+// Gradle script to clean up the antora-ui-bundle project
 
 plugins {
     id 'base' // to add a "clean" task to the project
