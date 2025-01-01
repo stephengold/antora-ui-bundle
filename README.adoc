@@ -30,7 +30,7 @@ If you want to simply use the default UI for your Antora-generated site, add the
 ----
 ui:
   bundle:
-    url: https://github.com/stephengold/antora-ui-bundle/releases/download/v-sgold240101a/ui-bundle.zip
+    url: https://github.com/stephengold/antora-ui-bundle/releases/download/v-sgold250101a/ui-bundle.zip
     snapshot: true
 ----
 
