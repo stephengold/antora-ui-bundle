@@ -2,6 +2,13 @@
 
 plugins {
     base // to add a "clean" task to the project
+    java // to define source sets
+}
+
+sourceSets.main {
+    resources {
+        srcDir("src") // for NetBeans access
+    }
 }
 
 // Register cleanup tasks:
