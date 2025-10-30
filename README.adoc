@@ -66,23 +66,23 @@ Next, make sure that you have Node.js installed (which also provides npm).
  $ node --version
 
 If this command fails with an error, you don't have Node.js installed.
-If the command doesn't report an LTS version of Node.js (e.g., v22.21.0), it means you don't have a suitable version of Node.js installed.
-In this guide, we'll be installing Node.js 22.
+If the command doesn't report an LTS version of Node.js (e.g., v24.11.0), it means you don't have a suitable version of Node.js installed.
+In this guide, we'll be installing Node.js 24.
 
 While you can install Node.js from the official packages, we strongly recommend that you use {url-nvm}[nvm] (Node Version Manager) to manage your Node.js installation(s).
 Follow the {url-nvm-install}[nvm installation instructions] to set up nvm on your machine.
 
-Once you've installed nvm, open a new terminal and install Node.js 22 using the following command:
+Once you've installed nvm, open a new terminal and install Node.js 24 using the following command:
 
- $ nvm install 22
+ $ nvm install 24
 
 You can switch to this version of Node.js at any time using the following command:
 
- $ nvm use 22
+ $ nvm use 24
 
-To make Node.js 22 the default in new terminals, type:
+To make Node.js 24 the default in new terminals, type:
 
- $ nvm alias default 22
+ $ nvm alias default 24
 
 Now that you have Node.js installed, you can proceed with installing the Gulp CLI.
 
