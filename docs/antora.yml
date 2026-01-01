@@ -1,5 +1,5 @@
 name: antora-ui-bundle
-title: Antora UI for Acorus/Libbulletjme/Minie
+title: Antora UI for Acorus/Jolt JNI/Libbulletjme/Minie
 version: ~
 nav:
 - modules/ROOT/nav.adoc
