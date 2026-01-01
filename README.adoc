@@ -5,8 +5,6 @@
 // Project URLs:
 :url-project: https://github.com/stephengold/antora-ui-bundle
 :url-preview: https://stephengold.github.io/Minie/minie/overview.html
-:url-ci-pipelines: {url-project}/pipelines
-:img-ci-status: {url-project}/badges/master/pipeline.svg
 // External URLs:
 :url-antora: https://antora.org
 :url-antora-docs: https://docs.antora.org
