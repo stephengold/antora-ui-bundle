@@ -1,7 +1,5 @@
 = Antora Default UI
 // Settings:
-:idprefix:
-:idseparator: -
 :experimental:
 :hide-uri-scheme:
 // URLs:

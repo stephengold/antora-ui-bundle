@@ -1,7 +1,4 @@
 = Set up a UI Project
-// Settings:
-:idprefix:
-:idseparator: -
 // URIs:
 :url-project: https://github.com/stephengold/antora-ui-bundle.git
 
