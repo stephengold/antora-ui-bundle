@@ -37,7 +37,7 @@ To check whether you have Node.js installed, and which version, open a terminal 
 
 You should see a version string, such as:
 
- v24.12.0
+ v24.13.0
 
 If the command fails with an error, it means you don't have Node.js installed.
 The best way to install Node.js is to use nvm (Node Version Manager).
