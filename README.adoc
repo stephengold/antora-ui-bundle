@@ -1,4 +1,4 @@
-= Antora Default UI
+= Antora UI
 // Settings:
 :experimental:
 :hide-uri-scheme:
@@ -22,7 +22,7 @@ You can see it in use at {url-preview}.
 
 == Use the Default UI
 
-If you want to simply use the default UI for your Antora-generated site, add the following UI configuration to your playbook:
+If you want to simply use this UI for your Antora-generated site, add the following UI configuration to your playbook:
 
 [source,yaml]
 ----
@@ -43,7 +43,7 @@ A more comprehensive tutorial can be found in the documentation at {url-antora-d
 
 === Prerequisites
 
-To preview and bundle the default UI, you need the following software on your computer:
+To preview and bundle this UI, you need the following software on your computer:
 
 * {url-git}[git] (command: `git`)
 * {url-nodejs}[Node.js] (commands: `node` and `npm`)
@@ -109,13 +109,13 @@ Now that you have the prerequisites installed, you can fetch and build the UI pr
 
 === Clone and Initialize the UI Project
 
-Clone the default UI project using git:
+Clone the UI project using git:
 
 [subs=attributes+]
  $ git clone {url-project} &&
    cd "`basename $_`"
 
-The example above clones Antora's default UI project and then switches to the project folder on your filesystem.
+The example above clones this UI project and then switches to the project folder on your filesystem.
 Stay in this project folder when executing all subsequent commands.
 
 Use npm to install the project's dependencies inside the project.
@@ -135,7 +135,7 @@ If you prefer to install packages using Yarn, run this command instead:
 
 === Preview the UI
 
-The default UI project is configured to preview offline.
+This UI project is configured to preview offline.
 The files in the [.path]_preview-src/_ folder provide the sample content that allow you to see the UI in action.
 In this folder, you'll primarily find pages written in AsciiDoc.
 These pages provide a representative sample and kitchen sink of content from the real site.
