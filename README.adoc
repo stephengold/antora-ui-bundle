@@ -13,8 +13,8 @@
 :url-gulp: http://gulpjs.com
 :url-opendevise: https://opendevise.com
 :url-nodejs: https://nodejs.org
-:url-nvm: https://github.com/creationix/nvm
-:url-nvm-install: {url-nvm}#installation
+:url-nvm: https://github.com/nvm-sh/nvm
+:url-nvm-install: {url-nvm}#installing-and-updating
 :url-source-maps: https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map
 
 This project produces a UI bundle that can be used by {url-antora}[Antora] to generate a documentation website.
